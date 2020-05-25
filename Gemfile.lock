@@ -73,5 +73,8 @@ DEPENDENCIES
   jekyll-feed (~> 0.13.0)
   minima (~> 2.5, >= 2.5.1)
 
+RUBY VERSION
+   ruby 2.7.1p83
+
 BUNDLED WITH
    2.1.4
