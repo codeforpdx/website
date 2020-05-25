@@ -1,0 +1,14 @@
+
+version: "3"
+services:
+  c4pdx_website:
+    image: jekyll/jekyll:pages
+    container_name: c4pdx_website
+    command: jekyll serve --force_polling --livereload --config _config.yml,_config.docker.yml
+    environment:
+      - JEKYLL_ENV=docker
+    ports:
+      - 4000:4000
+      - 35729:35729
+    volumes:
+      - .:/srv/jekyll
