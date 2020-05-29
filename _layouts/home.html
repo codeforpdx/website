@@ -15,7 +15,7 @@ layout: default
     <!-- {% assign last_project_list_item = site.projects.last %} -->
     {% for project in site.projects %}
     <li>
-      <a href="{{ project.url }}">
+      <a href="{{ project.url | absolute_url }}">
         <h3>{{ project.name }}</h3>
       </a>
       <div>
