@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <h2 class="post-list-heading">Projects</h2>
+  <br>
+  <ul class="post-list">
+    <!-- {% assign last_project_list_item = site.projects.last %} -->
+    {% for project in site.projects %}
+    <li>
+      <a href="{{ project.url }}">
+        <h3>{{ project.name }}</h3>
+      </a>
+      <div>
+        <h4>Problem</h4>
+        <p>{{ project.problem }}</p>
+        <h4>Proposal</h4>
+        <p>{{ project.proposal }}</p>
+        <p>Current Status: {{ project.status }}</p>
+      </div>
+      {% unless project == site.projects.last %}
+        <br>
+        {{ "---" | markdownify }}
+      {% endunless %}
+
+    </li>
+    {% endfor %}
+  </ul>
+</div>
