@@ -1,8 +1,15 @@
-<header class="site-header custom-site-header" role="banner">
+<header class="custom-site-header custom-site-header" role="banner">
   <div>
+<!-- style="position: absolute; left: 0px; padding: 10px; width: max-width;" -->
+  <div id="splash-image-container">
+     <!-- style="position: relative; opacity: 0.2; -webkit-transition: opacity 0.5s;-moz-transition: opacity 0.5s;-o-transition: opacity 0.5s;"  -->
+  <img id="splash-image" src="{{ '/assets/images/c4pdx-group.jpg' | absolute_url }}">
+  </div>
     <a class="site-title site-logo" rel="author" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/rose_logo.png' | absolute_url }}" alt="logo"></a>
   </div>
-  <a class="site-title custom-site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <div>
+  <a class="custom-site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </div>
 
   <div>
     <div>

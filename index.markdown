@@ -4,7 +4,7 @@
 
 layout: home
 ---
-## Who We Are
+
 
 ### Local Civic Innovators and Creative Problem-Solvers.
 
