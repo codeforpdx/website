@@ -1,22 +1,20 @@
-<header class="custom-site-header custom-site-header" role="banner">
+<header class="custom-site-header" role="banner">
   <div>
-<!-- style="position: absolute; left: 0px; padding: 10px; width: max-width;" -->
-  <div id="splash-image-container">
-     <!-- style="position: relative; opacity: 0.2; -webkit-transition: opacity 0.5s;-moz-transition: opacity 0.5s;-o-transition: opacity 0.5s;"  -->
-  <img id="splash-image" src="{{ '/assets/images/c4pdx-group.jpg' | absolute_url }}">
+    <div id="splash-image-container" class="wrapper">
+      <img id="splash-image" src="{{ '/assets/images/c4pdx-group.jpg' | absolute_url }}">
+    </div>
+      <a class="site-logo" rel="author" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/rose_logo.png' | absolute_url }}" alt="logo"></a>
   </div>
-    <a class="site-title site-logo" rel="author" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/rose_logo.png' | absolute_url }}" alt="logo"></a>
-  </div>
-  <div>
-  <a class="custom-site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <div style="text-align: center;">
+    <a class="custom-site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title }}</a>
   </div>
 
   <div>
-    <div>
+<!--     <div>
       <ul class=social-nav-icons>
         <li><a href="https://www.twitter.com/{{ site.github_username }}"><img class="github-nav-icon" src="{{ '/assets/images/social_icons/GitHub-Mark-64px.png' | absolute_url }}"></a></li>
         <li><a href="https://www.twitter.com/{{ site.twitter_username }}"><img class="twitter-nav-icon" src="{{ '/assets/images/social_icons/Twitter_Social_Icon_Square_White.png' | absolute_url }}"></a></li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </header>
