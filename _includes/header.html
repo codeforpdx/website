@@ -1,20 +1,24 @@
-<header class="custom-site-header" role="banner">
+<header class="splash-header" role="banner">
+  <div id="splash-image-container" class="wrapper">
+    <img id="splash-image" src="{{ '/assets/images/c4pdx-group.jpg' | absolute_url }}">
+  </div>
+</header>
+
+<header class="sticky-nav-header custom-site-header">
   <div>
-    <div id="splash-image-container" class="wrapper">
-      <img id="splash-image" src="{{ '/assets/images/c4pdx-group.jpg' | absolute_url }}">
-    </div>
       <a class="site-logo" rel="author" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/rose_logo.png' | absolute_url }}" alt="logo"></a>
   </div>
+
   <div style="text-align: center;">
     <a class="custom-site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title }}</a>
   </div>
+</div>
 
-  <div>
+<div>
 <!--     <div>
-      <ul class=social-nav-icons>
-        <li><a href="https://www.twitter.com/{{ site.github_username }}"><img class="github-nav-icon" src="{{ '/assets/images/social_icons/GitHub-Mark-64px.png' | absolute_url }}"></a></li>
-        <li><a href="https://www.twitter.com/{{ site.twitter_username }}"><img class="twitter-nav-icon" src="{{ '/assets/images/social_icons/Twitter_Social_Icon_Square_White.png' | absolute_url }}"></a></li>
-      </ul>
-    </div> -->
-  </div>
+    <ul class=social-nav-icons>
+      <li><a href="https://www.twitter.com/{{ site.github_username }}"><img class="github-nav-icon" src="{{ '/assets/images/social_icons/GitHub-Mark-64px.png' | absolute_url }}"></a></li>
+      <li><a href="https://www.twitter.com/{{ site.twitter_username }}"><img class="twitter-nav-icon" src="{{ '/assets/images/social_icons/Twitter_Social_Icon_Square_White.png' | absolute_url }}"></a></li>
+    </ul>
+  </div> -->
 </header>

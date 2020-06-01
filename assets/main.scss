@@ -15,20 +15,23 @@ header {
   padding-right: 10px
 }
 
-.custom-site-header {
+.sticky-nav-header {
+  position: sticky;
+  top: 0px;
+
+}
+
+.splash-header {
   border-top: 5px solid #2C2E3A;
-  border-bottom: 1px solid #00B3A7;
+  border-bottom: 1px solid black;
   min-height: 55.95px;
   position: relative;
-  /*background: rgb(65,65,65)*/
   background: #2C2E3A;
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,666666+6,666666+6,595959+12,000000+44,000000+44,111111+60,2b2b2b+76,2c2c2c+86,2c2c2c+86,1c1c1c+91,131313+100 */
-/*  background: #4c4c4c;
-  background: -moz-linear-gradient(top,  #4c4c4c 0%, #666666 6%, #666666 6%, #595959 12%, #000000 44%, #000000 44%, #111111 60%, #2b2b2b 76%, #2c2c2c 86%, #2c2c2c 86%, #1c1c1c 91%, #131313 100%);
-  background: -webkit-linear-gradient(top,  #4c4c4c 0%,#666666 6%,#666666 6%,#595959 12%,#000000 44%,#000000 44%,#111111 60%,#2b2b2b 76%,#2c2c2c 86%,#2c2c2c 86%,#1c1c1c 91%,#131313 100%);
-  background: linear-gradient(to bottom,  #4c4c4c 0%,#666666 6%,#666666 6%,#595959 12%,#000000 44%,#000000 44%,#111111 60%,#2b2b2b 76%,#2c2c2c 86%,#2c2c2c 86%,#1c1c1c 91%,#131313 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );*/
+}
 
+.custom-site-header {
+  border-bottom: 1px solid #1ef7e2eb;
+  background: #2C2E3A;
 }
 
 
@@ -79,7 +82,7 @@ header {
 /* Footer */
 
 .custom-site-footer {
-  border-top: 1px solid #00B3A7;
+  border-top: 1px solid #1ef7e2eb;
   padding: 30px 0;
 }
 
@@ -105,9 +108,9 @@ header {
     width: 94px;
   }
 
-.custom-site-title {
-  line-height: 50px;
-  text-decoration: none;
-  color: #1ef7e2eb;
-}
+  .custom-site-title {
+    line-height: 50px;
+    text-decoration: none;
+    color: #1ef7e2eb;
+  }
 }
