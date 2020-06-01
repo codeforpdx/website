@@ -23,14 +23,14 @@ header {
 
 .splash-header {
   border-top: 5px solid #2C2E3A;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #1e1e1e;;
   min-height: 55.95px;
   position: relative;
   background: #2C2E3A;
+  padding-bottom: 5px;
 }
 
 .custom-site-header {
-  border-bottom: 1px solid #1ef7e2eb;
   background: #2C2E3A;
 }
 
@@ -82,7 +82,7 @@ header {
 /* Footer */
 
 .custom-site-footer {
-  border-top: 1px solid #1ef7e2eb;
+  border-top: 1px solid black;
   padding: 30px 0;
 }
 
