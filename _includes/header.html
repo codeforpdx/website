@@ -1,8 +1,19 @@
 <header class="splash-header" role="banner">
   <picture>
-    <source srcset="{{ 'assets/images/c4pdx-group-banner.jpg' | absolute_url }}" media="(min-width: 801px)">
-    <source srcset="{{ 'assets/images/c4pdx-group.jpg' | absolute_url }}" media="(max-width: 800px)">
-    <img alt="Code4PDX group image">
+    <source
+      srcset="{{ 'assets/images/c4pdx-group/c_scale,w_150.jpg' | absolute_url }} 150w,
+              {{ 'assets/images/c4pdx-group/c_scale,w_544.jpg' | absolute_url }} 544w"
+      media="(max-width: 800px)">
+    <source
+      srcset="{{ 'assets/images/c4pdx-group-banner/c_scale,w_800.jpg' | absolute_url }} 800w,
+              {{ 'assets/images/c4pdx-group-banner/c_scale,w_1891.jpg' | absolute_url }} 1891,
+              {{ 'assets/images/c4pdx-group-banner/c_scale,w_2632.jpg' | absolute_url }} 2632,
+              {{ 'assets/images/c4pdx-group-banner/c_scale,w_3330.jpg' | absolute_url }} 3330,
+              {{ 'assets/images/c4pdx-group-banner/c_scale,w_3840.jpg' | absolute_url }} 3840"
+      media="(min-width: 801px)">
+    <img
+      src="{{ 'assets/images/c4pdx-group-banner/c_scale,w_800.jpg' | absolute_url }}"
+      alt="Code4PDX group image">
   </picture>
 </header>
 
