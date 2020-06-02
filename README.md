@@ -1,6 +1,6 @@
 # Future: Code for PDX website
 
-![Deploy CI](https://github.com/codeforpdx/website-reboot/workflows/Deploy%20CI/badge.svg?branch=master)
+![](https://github.com/codeforpdx/website-reboot//workflows/Build/badge.svg)
 
 > Hosted at https://codeforpdx.org
 

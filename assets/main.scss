@@ -63,7 +63,8 @@ header {
 
 .site-logo {
     position: absolute;
-    left: 10px;
+    left: 20px;
+    top: 3px;
 }
 
 .custom-site-title {
@@ -82,14 +83,19 @@ header {
 /* Footer */
 
 .custom-site-footer {
+  background: #2C2E3A;
   border-top: 1px solid black;
   padding: 30px 0;
+
+  a {
+    color: #1ef7e2eb;
+  }
 }
 
 .custom-footer-heading {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #23b99e;
+  color: #1ef7e2eb;
 }
 
 @media (max-width: 549px) {
