@@ -4,6 +4,9 @@
   {%- include head.html -%}
 
   <body>
+    {% if page.name == 'index.markdown' %}
+      {%- include splash_header.html -%}
+    {% endif %}
 
     {%- include header.html -%}
 
