@@ -4,6 +4,9 @@
 
 @import "minima";
 
+$primary-color: #1ef7e2eb;
+$secondary-color: #2C2E3A;
+
 body {
   color: #000;
 }
@@ -22,15 +25,15 @@ header {
 .sticky-nav-header {
   position: sticky;
   top: 0px;
-  background: #2C2E3A;
+  background: $secondary-color;
 }
 
 .splash-header {
-  border-top: 5px solid #2C2E3A;
+  border-top: 5px solid $secondary-color;
   border-bottom: 1px solid #1e1e1e;;
   min-height: 55.95px;
   position: relative;
-  background: #2C2E3A;
+  background: $secondary-color;
 }
 
 /* social icons in nav bar */
@@ -65,29 +68,29 @@ header {
   font-size: 26px;
   line-height: 56px;
   text-decoration: none;
-  color: #1ef7e2eb;
+  color: $primary-color;
 }
 
 .custom-site-title, .custom-site-title:visited {
-  color: #1ef7e2eb;
+  color: $primary-color;
 }
 
 /* Footer */
 
 .custom-site-footer {
-  background: #2C2E3A;
+  background: $secondary-color;
   border-top: 1px solid black;
   padding: 30px 0;
 
   a {
-    color: #1ef7e2eb;
+    color: $primary-color;
   }
 }
 
 .custom-footer-heading {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #1ef7e2eb;
+  color: $primary-color;
 }
 
 @media (max-width: 549px) {
@@ -115,6 +118,6 @@ header {
   .custom-site-title {
     line-height: 50px;
     text-decoration: none;
-    color: #1ef7e2eb;
+    color: $primary-color;
   }
 }
