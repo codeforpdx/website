@@ -30,6 +30,7 @@ url: "https://codeforpdx.github.io/website-reboot" # the base hostname & protoco
 # Social site usernames
 twitter_username: CodeforPDX
 github_username: codeforpdx
+meetup_username: Code-for-PDX
 
 # Build settings
 theme: minima

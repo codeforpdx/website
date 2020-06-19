@@ -8,6 +8,10 @@ body {
   color: #000;
 }
 
+.center-text {
+  text-align: center;
+}
+
 /* Header */
 
 header {
@@ -18,7 +22,7 @@ header {
 .sticky-nav-header {
   position: sticky;
   top: 0px;
-
+  background: #2C2E3A;
 }
 
 .splash-header {
@@ -27,14 +31,7 @@ header {
   min-height: 55.95px;
   position: relative;
   background: #2C2E3A;
-  padding-bottom: 5px;
 }
-
-.custom-site-header {
-  background: #2C2E3A;
-}
-
-
 
 /* social icons in nav bar */
 
@@ -43,20 +40,17 @@ header {
   margin: 0;
   padding: 0;
   text-align: right;
+  position: absolute;
+  top: 3px;
+  right: 0;
   li {
     display: inline-block;
+  };
+  img {
+    margin: 5px;
+    height: 40px;
+    width: 40px
   }
-}
-
-.github-nav-icon {
-  height: 37px;
-  width: 37px
-}
-
-.twitter-nav-icon {
-  background-color: black;
-  height: 50px;
-  width: 50px
 }
 
 /* Logo and title layout */
@@ -68,8 +62,6 @@ header {
 }
 
 .custom-site-title {
-/*  padding-right: 10px;
-  margin-left: 150px;*/
   font-size: 26px;
   line-height: 56px;
   text-decoration: none;
@@ -77,7 +69,7 @@ header {
 }
 
 .custom-site-title, .custom-site-title:visited {
-    color: #1ef7e2eb;
+  color: #1ef7e2eb;
 }
 
 /* Footer */
@@ -105,11 +97,17 @@ header {
     width: 0px
   }
   .social-nav-icons {
-    height: 8px;
+    top: 12.5px;
+    img {
+      margin: 3px;
+      height: 24px;
+      width: 24px;
+    }
   }
 
   .site-logo {
     position: absolute;
+    left: 10px;
     height: 60px;
     width: 94px;
   }
