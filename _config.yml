@@ -41,6 +41,7 @@ collections:
   projects:
     output: true
   partners:
+  sponsors:
 
 defaults:
   - scope:

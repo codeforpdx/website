@@ -50,4 +50,17 @@ layout: default
       {% endfor %}
     </ul>
   </section>
+
+  <section id="sponsors">
+    <h2>Our Sponsors</h2>
+    <ul class="grid-container post-list">
+      {% for sponsor in site.sponsors %}
+        <li class="align-image-360 shady-box-shadow">
+          <a href="{{ sponsor.link }}" target="_blank">
+            <img src="{{ sponsor.logo | absolute_url }}" alt="{{ sponsor.name }}">
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 </div>
