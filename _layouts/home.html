@@ -78,7 +78,7 @@ layout: default
         </div>
         <div class="align-image-360 shady-box-shadow">
           <li>
-            <img src="{{ person.image }}">
+            <img src="{{ person.image | absolute_url }}">
           </li>
         </div>
       {% endfor %}
