@@ -38,7 +38,7 @@ plugins:
   - jekyll-feed
 
 collections:
-  projects:
+  products:
     output: true
   partners:
   sponsors:
@@ -46,9 +46,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "projects"
+      type: "products"
     values:
-      layout: "project"
+      layout: "product"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

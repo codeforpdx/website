@@ -13,22 +13,22 @@ layout: default
     <br />
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <section id="products">
+    <h2>Our Products</h2>
     <ul class="post-list">
-      {% for project in site.projects %}
+      {% for product in site.products %}
         <li>
-          <a href="{{ project.url | absolute_url }}">
-            <h3>{{ project.name }}</h3>
+          <a href="{{ product.url | absolute_url }}">
+            <h3>{{ product.name }}</h3>
           </a>
           <div>
             <h4>Problem</h4>
-            <p>{{ project.problem }}</p>
+            <p>{{ product.problem }}</p>
             <h4>Proposal</h4>
-            <p>{{ project.proposal }}</p>
-            <p>Current Status: {{ project.status }}</p>
+            <p>{{ product.proposal }}</p>
+            <p>Current Status: {{ product.status }}</p>
           </div>
-          {% unless project == site.projects.last %}
+          {% unless product == site.products.last %}
             <br>
             {{ "---" | markdownify }}
           {% endunless %}
