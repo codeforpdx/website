@@ -42,11 +42,11 @@ layout: default
     <h2>Our Partners</h2>
     <ul class="grid-container post-list">
       {% for partner in site.partners %}
-        <li class="align-image-360 shady-box-shadow">
-          <a href="{{ partner.link }}" target="_blank">
+        <a class="align-image-360 shady-box-shadow" href="{{ partner.link }}" target="_blank">
+          <li>
             <img src="{{ partner.logo | absolute_url }}" alt="{{ partner.name }}">
-          </a>
-        </li>
+          </li>
+        </a>
       {% endfor %}
     </ul>
   </section>
@@ -55,11 +55,11 @@ layout: default
     <h2>Our Sponsors</h2>
     <ul class="grid-container post-list">
       {% for sponsor in site.sponsors %}
-        <li class="align-image-360 shady-box-shadow">
-          <a href="{{ sponsor.link }}" target="_blank">
+        <a class="align-image-360 shady-box-shadow" href="{{ sponsor.link }}" target="_blank">
+          <li>
             <img src="{{ sponsor.logo | absolute_url }}" alt="{{ sponsor.name }}">
-          </a>
-        </li>
+          </li>
+        </a>
       {% endfor %}
     </ul>
   </section>

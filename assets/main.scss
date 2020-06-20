@@ -26,6 +26,7 @@ header {
   position: sticky;
   top: 0px;
   background: $secondary-color;
+  z-index: 10;
 }
 
 .splash-header {
@@ -83,11 +84,10 @@ header {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 33% 33%;
-  grid-template-rows: 100px 100px;
-  grid-auto-flow: column;
+  grid-template-columns: 210px 210px;
+  grid-auto-rows: 100px;
   justify-content: center;
-  gap: 0px 35px;
+  gap: 35px 35px;
   padding: 10px;
 }
 
@@ -157,5 +157,14 @@ header {
     line-height: 50px;
     text-decoration: none;
     color: $primary-color;
+  }
+}
+
+@media (max-width: 475px) {
+  .grid-container {
+    grid-template-columns: 210px;
+    justify-content: center;
+    gap: 15px 0px;
+    padding: 10px;
   }
 }
