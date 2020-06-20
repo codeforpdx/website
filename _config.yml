@@ -40,6 +40,7 @@ plugins:
 collections:
   projects:
     output: true
+  partners:
 
 defaults:
   - scope:

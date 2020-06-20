@@ -6,34 +6,47 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <section>
-    <h2 style="text-align: center" class="sticky-header">Who We Are</h2>
+  <section id="about">
+    <h2>Who We Are</h2>
     {{ content }}
 
     <br />
   </section>
 
-  <section>
-    <h2 style="text-align: center" class="sticky-header">Projects</h2>
+  <section id="projects">
+    <h2>Projects</h2>
     <ul class="post-list">
       {% for project in site.projects %}
-      <li>
-        <a href="{{ project.url | absolute_url }}">
-          <h3>{{ project.name }}</h3>
-        </a>
-        <div>
-          <h4>Problem</h4>
-          <p>{{ project.problem }}</p>
-          <h4>Proposal</h4>
-          <p>{{ project.proposal }}</p>
-          <p>Current Status: {{ project.status }}</p>
-        </div>
-        {% unless project == site.projects.last %}
-          <br>
-          {{ "---" | markdownify }}
-        {% endunless %}
+        <li>
+          <a href="{{ project.url | absolute_url }}">
+            <h3>{{ project.name }}</h3>
+          </a>
+          <div>
+            <h4>Problem</h4>
+            <p>{{ project.problem }}</p>
+            <h4>Proposal</h4>
+            <p>{{ project.proposal }}</p>
+            <p>Current Status: {{ project.status }}</p>
+          </div>
+          {% unless project == site.projects.last %}
+            <br>
+            {{ "---" | markdownify }}
+          {% endunless %}
 
-      </li>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="partners">
+    <h2>Our Partners</h2>
+    <ul class="grid-container post-list">
+      {% for partner in site.partners %}
+        <li class="align-image-360 shady-box-shadow">
+          <a href="{{ partner.link }}" target="_blank">
+            <img src="{{ partner.logo | absolute_url }}" alt="{{ partner.name }}">
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </section>

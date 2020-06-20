@@ -75,6 +75,44 @@ header {
   color: $primary-color;
 }
 
+/* body */
+
+.home section h2 {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33%;
+  grid-template-rows: 100px 100px;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 0px 35px;
+  padding: 10px;
+}
+
+.align-image-360 {
+   position: relative;
+   img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+   }
+}
+
+.shady-box-shadow {
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.13);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.13);
+  box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.13);
+}
+
 /* Footer */
 
 .custom-site-footer {
