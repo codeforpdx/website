@@ -63,4 +63,25 @@ layout: default
       {% endfor %}
     </ul>
   </section>
+
+  <section id="team">
+    <h2>Our Team</h2>
+    <ol class="grid-container post-list">
+      {% for person in site.team %}
+        <div class="align-image-360 shady-box-shadow">
+          <li>
+            <h3>{{ person.name }}</h3>
+            <p>{{ person.role }}</br>
+               <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+            </p>
+          </li>
+        </div>
+        <div class="align-image-360 shady-box-shadow">
+          <li>
+            <img src="{{ person.image }}">
+          </li>
+        </div>
+      {% endfor %}
+    </ol>
+  </section>
 </div>
