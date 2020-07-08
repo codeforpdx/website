@@ -1,8 +1,8 @@
 ---
 name: Arthur Smid
-role:
+role: Co-Founder
 email: arthur@codeforpdx.org
 bio:
-image: /assets/images/team/arthur.jpg
+image: /assets/images/team/arthur_sq.jpg
 order: 2
 ---

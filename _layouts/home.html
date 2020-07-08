@@ -7,14 +7,12 @@ layout: default
   {%- endif -%}
 
   <section id="about">
-    <h2>Who We Are</h2>
+    {% include section_header.html content="Who We Are" %}
     {{ content }}
-
-    <br />
   </section>
 
   <section id="products">
-    <h2>Our Products</h2>
+    {% include section_header.html content="Our Products" %}
     <ul class="post-list">
       {% for product in site.products %}
         <li>
@@ -39,7 +37,7 @@ layout: default
   </section>
 
   <section id="partners">
-    <h2>Our Partners</h2>
+    {% include section_header.html content="Our Partners" %}
     <ul class="grid-container post-list">
       {% for partner in site.partners %}
         <a class="align-image-360 shady-box-shadow" href="{{ partner.link }}" target="_blank">
@@ -52,7 +50,7 @@ layout: default
   </section>
 
   <section id="sponsors">
-    <h2>Our Sponsors</h2>
+    {% include section_header.html content="Our Sponsors" %}
     <ul class="grid-container post-list">
       {% for sponsor in site.sponsors %}
         <a class="align-image-360 shady-box-shadow" href="{{ sponsor.link }}" target="_blank">
@@ -65,22 +63,28 @@ layout: default
   </section>
 
   <section id="team">
-    <h2>Our Team</h2>
-    <ol class="grid-container post-list">
-      {% for person in site.team %}
-        <div class="align-image-360 shady-box-shadow">
-          <li>
-            <h3>{{ person.name }}</h3>
-            <p>{{ person.role }}</br>
-               <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-            </p>
-          </li>
-        </div>
-        <div class="align-image-360 shady-box-shadow">
-          <li>
-            <img src="{{ person.image | absolute_url }}">
-          </li>
-        </div>
+    {% include section_header.html content="Our Team" %}
+    <ol>
+      {% for team_member in site.team %}
+        <li style="margin-top: 25px; margin-bottom: 25px;">
+          <div>
+            <div class="profile-left">
+              {% if team_member.image %}
+                <img class="profile-image" src="{{ team_member.image | absolute_url }}">
+              {% else %}
+              <div>
+                {% include smiley.html %}
+              </div>
+              {% endif %}
+            </div>
+            <div class="profile-right">
+              <h3>{{ team_member.name }}</h3>
+              <p>{{ team_member.role }}</br>
+                <a href="mailto:{{ team_member.email }}">{{ team_member.email }}</a>
+              </p>
+            </div>
+          </div>
+        </li>
       {% endfor %}
     </ol>
   </section>

@@ -1,6 +1,6 @@
 ---
 name: Nick Schimek
-role: Webmaster
+role: Web App Developer
 email: nick@codeforpdx.org
 bio:
 image:
