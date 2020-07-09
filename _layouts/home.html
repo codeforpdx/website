@@ -67,7 +67,8 @@ layout: default
     <ol>
       {% for team_member in site.team %}
         <li style="margin-top: 25px; margin-bottom: 25px;">
-          <div>
+          <div class="profile-container">
+
             <div class="profile-left">
               {% if team_member.image %}
                 <img class="profile-image" src="{{ team_member.image | absolute_url }}">
@@ -77,12 +78,14 @@ layout: default
               </div>
               {% endif %}
             </div>
+
             <div class="profile-right">
               <h3>{{ team_member.name }}</h3>
-              <p>{{ team_member.role }}</br>
-                <a href="mailto:{{ team_member.email }}">{{ team_member.email }}</a>
-              </p>
+              <p class="role">{{ team_member.role }}</p>
+              <p class="bio">{{ team_member.bio }}</p>
+              <a href="mailto:{{ team_member.email }}">{{ team_member.email }}</a>
             </div>
+
           </div>
         </li>
       {% endfor %}

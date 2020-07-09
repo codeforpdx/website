@@ -134,6 +134,14 @@ header {
   max-height: 200px;
 }
 
+.profile-container {
+  overflow: auto;
+}
+
+.role {
+  font-size: 2vw;
+}
+
 .profile-left {
   width: 28%;
   display: inline-block;
@@ -144,8 +152,10 @@ header {
   display: inline-block;
   float: right;
   font-size: 3vw;
+  h3, p {
+    margin-bottom: 0;
+  };
 }
-
 
 #team {
   ol {
@@ -282,5 +292,13 @@ header {
 @media (min-width: 740px) {
   .profile-right {
     font-size: 22px;
+  }
+
+  .role {
+    font-size: 12px;
+  }
+
+  .bio {
+    font-size: 16px;
   }
 }
