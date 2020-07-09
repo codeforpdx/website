@@ -161,6 +161,37 @@ header {
   }
 }
 
+/* Donate Button */
+
+.donate-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.donate-button button:hover {
+  opacity: 0.9;
+}
+
+.donate-button button {
+  background-color: $secondary-color;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
 /* Footer */
 
 .custom-site-footer {
