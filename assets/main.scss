@@ -124,6 +124,10 @@ header {
   box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.13);
 }
 
+#products h3 a {
+  color: #073b7e;
+}
+
 /* Team Section */
 .profile-image {
   -webkit-border-radius: 100px;
@@ -238,6 +242,11 @@ header {
   font-size: 18px;
   margin-bottom: 15px;
   color: $primary-color;
+}
+
+.footer-col-wrapper {
+  font-size: 15px;
+  color: #c0c0c0
 }
 
 @media (max-width: 660px) {
