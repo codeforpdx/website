@@ -1,8 +1,9 @@
 ---
 name: Katrina Sperry
 role: Product Manager
-email: katrina@codeforpdx.org
-bio:
+bio: Katrina ensures our website and meetups are up-to-date and welcoming to all.
 image: /assets/images/team/katrina.jpeg
-order: 5
+email: katrina@codeforpdx.org
+linkedin: katrinasperry
+order: 3
 ---

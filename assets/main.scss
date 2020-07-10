@@ -136,18 +136,20 @@ header {
 
 .profile-container {
   overflow: auto;
+  position: relative;
 }
 
 .role {
   font-size: 2vw;
 }
 
-.profile-left {
+.profile-image-container {
   width: 28%;
   display: inline-block;
+  float: left;
 }
 
-.profile-right {
+.profile-info-container {
   width: 70%;
   display: inline-block;
   float: right;
@@ -155,6 +157,24 @@ header {
   h3, p {
     margin-bottom: 0;
   };
+}
+
+.profile-info-contact {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  a img {
+    width: 22px;
+    height: 22px;
+    margin-right: 1rem;
+  }
+}
+
+.team-member-contact {
+  font-size: 22px;
+  visibility: hidden;
 }
 
 #team {
@@ -220,12 +240,14 @@ header {
   color: $primary-color;
 }
 
-@media (max-width: 549px) {
+@media (max-width: 660px) {
   .grid-container {
     grid-template-columns: 210px 210px;
     grid-auto-rows: 100px;
   }
+}
 
+@media (max-width: 549px) {
   .social-nav-icons {
     top: 12.5px;
     img {
@@ -252,6 +274,16 @@ header {
     line-height: 50px;
     text-decoration: none;
     color: $primary-color;
+  }
+
+  .profile-info-contact a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+  }
+
+  .team-member-contact {
+    font-size: 16px;
   }
 }
 
@@ -290,7 +322,7 @@ header {
 }
 
 @media (min-width: 740px) {
-  .profile-right {
+  .profile-info-container {
     font-size: 22px;
   }
 

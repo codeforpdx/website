@@ -1,8 +1,9 @@
 ---
 name: Hugh Harker
-role: Co-Founder & CEO
-email: hugh@codeforpdx.org
-bio: A professional urbanist and developer. Hugh started Code for PDX in May of 2018. He comes from Cumberland, RI by way of Athens, GA.
+role: Founder & CEO
+bio: Hugh is a professional urbanist and developer. He started Code for PDX in May of 2018 and leads of our Dwellingly project.
 image: /assets/images/team/hugh_sq.jpeg
+email: hugh@codeforpdx.org
+linkedin: hugh-harker
 order: 1
 ---
