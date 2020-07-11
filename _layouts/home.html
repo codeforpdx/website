@@ -90,10 +90,10 @@ layout: default
             </div>
             <div class="profile-info-contact">
               <a href="mailto:{{ team_member.email }}" aria-label="Email">
-                <img src="/assets/images/mail-icon.png" aria-hidden="true" width="22" height="22">
+                <img src="{{ '/assets/images/mail-icon.png' | absolute_url }}" aria-hidden="true" width="22" height="22">
               </a>
               <a href="https://www.linkedin.com/in/{{ team_member.linkedin }}" target="_blank" aria-label="Linked In">
-                <img src="/assets/images/Linkedin-icon.png" aria-hidden="true" width="22" height="22">
+                <img src="{{ '/assets/images/Linkedin-icon.png' | absolute_url }}" aria-hidden="true" width="22" height="22">
               </a>
             </div>
           </div>
