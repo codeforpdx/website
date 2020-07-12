@@ -42,7 +42,11 @@ layout: default
       {% for partner in site.partners %}
         <a class="align-image-360 shady-box-shadow" href="{{ partner.link }}" target="_blank">
           <li>
-            <img src="{{ partner.logo | absolute_url }}" alt="{{ partner.name }}">
+            <img
+              src="{{ partner.logo | absolute_url }}"
+              alt="{{ partner.name }}"
+              title="{{ partner.name }}"
+            />
           </li>
         </a>
       {% endfor %}
@@ -55,7 +59,11 @@ layout: default
       {% for sponsor in site.sponsors %}
         <a class="align-image-360 shady-box-shadow" href="{{ sponsor.link }}" target="_blank">
           <li>
-            <img src="{{ sponsor.logo | absolute_url }}" alt="{{ sponsor.name }}">
+            <img
+              src="{{ sponsor.logo | absolute_url }}"
+              alt="{{ sponsor.name }}"
+              title="{{ sponsor.name }}"
+            />
           </li>
         </a>
       {% endfor %}
