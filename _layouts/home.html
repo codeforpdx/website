@@ -93,7 +93,7 @@ layout: default
             <div class="profile-info-container">
               <h3>{{ team_member.name }}</h3>
               <p class="role">{{ team_member.role }}</p>
-              <p class="bio">{{ team_member.bio }}</p>
+              <p class="bio">{{ team_member.bio | markdownify | remove: '<p>' | remove: '</p>'}}</p>
               <p class="team-member-contact">Contact info:</p>
             </div>
             <div class="profile-info-contact">
