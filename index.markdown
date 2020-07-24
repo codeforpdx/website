@@ -16,4 +16,4 @@ Ultimately, our goal is to make life better for residents by improving personal 
 
 ### Executive Leadership
 
-Code for PDX is led by an Executive Leadership Team that organizes events, manages strategic partnerships, and ensures fluid communication among cross-functional project teams. The Executive Team oversees volunteer management, organizational sustainability, day-to-day operations, and the engagement of the Advisory Board.
+Code for PDX is led by an Executive Leadership Team that organizes events, manages strategic partnerships, and ensures fluid communication among cross-functional product teams. The Executive Team oversees volunteer management, organizational sustainability, day-to-day operations, and the engagement of the Advisory Board.
