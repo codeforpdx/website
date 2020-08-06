@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   civic-minded volunteers who contribute their skills toward using the web
   as a platform for local government and community service.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://codeforpdx.github.io/website-reboot" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.codeforpdx.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Social site usernames
 twitter_username: CodeforPDX
