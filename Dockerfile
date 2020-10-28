@@ -1,4 +1,4 @@
-FROM ruby:2.7.1
+FROM ruby:2.7.2
 RUN mkdir /website_reboot
 WORKDIR /website_reboot
 COPY Gemfile /website_reboot/Gemfile

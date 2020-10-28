@@ -30,6 +30,7 @@ url: "https://www.codeforpdx.org" # the base hostname & protocol for your site, 
 # Social site usernames
 twitter_username: CodeforPDX
 github_username: codeforpdx
+slack_username: codeforpdx
 meetup_username: Code-for-PDX
 democracy_lab: CodeforPDX
 
