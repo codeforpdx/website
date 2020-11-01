@@ -6,5 +6,12 @@ layout: default
 <p>{{ page.problem }}</p>
 <h2>Proposal</h2>
 <p>{{ page.proposal }}</p>
-<p>Status: {{ page.status }}
+
+{% if page.status == "Active" %}
+    <p class="status active">Status: {{ page.status }}</p>
+{% elsif page.status == "On Hold" %}
+    <p class="status on-hold">Status: {{ page.status }}</p>
+{% else %}
+    <p class="status completed">Status: {{ page.status }}</p>
+{% endif %}
 
