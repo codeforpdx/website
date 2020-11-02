@@ -138,6 +138,24 @@ header {
   color: #073b7e;
 }
 
+/* Product Section */
+.box-padding {
+  padding: 15px 15px 5px 15px;
+}
+
+.status {
+  font-weight: bold;
+}
+.active {
+  color: green;
+}
+.on-hold {
+  color: red;
+}
+.completed {
+  color: purple;
+}
+
 /* Team Section */
 .profile-image {
   -webkit-border-radius: 100px;
