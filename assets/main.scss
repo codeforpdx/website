@@ -304,7 +304,8 @@ header {
 
 @media (max-width: 549px) {
   .social-nav-icons {
-    top: 12.5px;
+    top: 8.5px;
+    margin-right: 5px;
     img {
       margin: 3px;
       height: 24px;
@@ -374,6 +375,8 @@ header {
   }
 
   .social-nav-icons {
+    top: 9.5px;
+    margin-right: 3px;
     img {
       margin: 2px;
       height: 20px;
