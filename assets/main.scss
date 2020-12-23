@@ -11,7 +11,7 @@ body {
   color: #000;
 }
 
-.center-text {
+.nav-h1 {
   text-align: center;
   margin-bottom: 0;
   font-size: 26px;
@@ -304,7 +304,8 @@ header {
 
 @media (max-width: 549px) {
   .social-nav-icons {
-    top: 12.5px;
+    top: 8.5px;
+    margin-right: 5px;
     img {
       margin: 3px;
       height: 24px;
@@ -330,7 +331,7 @@ header {
     height: 60px;
   }
 
-  .center-text {
+  .nav-h1 {
     font-size: 24px;
     padding: 7px 0;
   }
@@ -369,11 +370,13 @@ header {
     height: 53px;
   }
 
-  .center-text {
+  .nav-h1 {
     padding: 5px 0;
   }
 
   .social-nav-icons {
+    top: 9.5px;
+    margin-right: 3px;
     img {
       margin: 2px;
       height: 20px;
