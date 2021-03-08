@@ -86,11 +86,13 @@ header {
 }
 
 .site-logo > img {
-  height: 65px;  
+  height: 65px;
 }
 
-.custom-site-title:visited {
+.custom-site-title, .custom-site-title:visited {
   color: $primary-color;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* body */
