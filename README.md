@@ -19,3 +19,7 @@ This is the repo for our official [website](https://codeforpdx.org). As a Code f
 
 ## Project Layout
  - Coming soonish, however the layout is standard Jekyll stuff.
+ 
+## Design Files 
+
+- The website redesign: [Home Page](https://www.figma.com/file/XM1goIQJxOMTRntMTnql6r/CFPDX?node-id=1185%3A530)
