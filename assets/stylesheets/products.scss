@@ -1,0 +1,22 @@
+section#products {
+  h3 a {
+    color: #073b7e;
+  }
+
+  .box-padding {
+    padding: 15px 15px 5px 15px;
+  }
+
+  .status {
+    font-weight: bold;
+  }
+  .active {
+    color: green;
+  }
+  .on-hold {
+    color: red;
+  }
+  .completed {
+    color: purple;
+  }
+}
