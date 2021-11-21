@@ -7,18 +7,12 @@
 $primary-color: #1ef7e2eb;
 $secondary-color: #2C2E3A;
 
+@import "header";
+@import "footer";
+@import "products";
+
 body {
   color: #000;
-}
-
-.nav-h1 {
-  text-align: center;
-  margin-bottom: 0;
-  font-size: 26px;
-  font-weight: bold;
-  text-decoration: none;
-  color: $primary-color;
-  padding: 8px 0;
 }
 
 .custom-page-content {
@@ -34,20 +28,7 @@ body {
   vertical-align: text-top;
 }
 
-/* Header */
-
-header {
-  padding-left:10px;
-  padding-right: 10px
-}
-
-.sticky-nav-header {
-  position: sticky;
-  top: 0px;
-  background: $secondary-color;
-  z-index: 10;
-  height: 55px;
-}
+/* splash header - large image at top of page */
 
 .splash-header {
   border-top: 5px solid $secondary-color;
@@ -55,44 +36,6 @@ header {
   min-height: 55.95px;
   position: relative;
   background: $secondary-color;
-}
-
-/* social icons in nav bar */
-
-.social-nav-icons {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-  position: absolute;
-  top: 3px;
-  right: 0;
-  li {
-    display: inline-block;
-  };
-  img {
-    margin: 5px;
-    height: 40px;
-    width: 40px
-  }
-}
-
-/* Logo and title layout */
-
-.site-logo {
-  position: absolute;
-  left: 20px;
-  top: 3px;
-}
-
-.site-logo > img {
-  height: 65px;
-}
-
-.custom-site-title, .custom-site-title:visited {
-  color: $primary-color;
-  text-decoration: none;
-  font-weight: 600;
 }
 
 /* body */
@@ -137,28 +80,6 @@ header {
   -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
   -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
   box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-}
-
-#products h3 a {
-  color: #073b7e;
-}
-
-/* Product Section */
-.box-padding {
-  padding: 15px 15px 5px 15px;
-}
-
-.status {
-  font-weight: bold;
-}
-.active {
-  color: green;
-}
-.on-hold {
-  color: red;
-}
-.completed {
-  color: purple;
 }
 
 /* Team Section */
@@ -260,29 +181,6 @@ header {
     text-decoration: none;
     color: $primary-color;
   }
-}
-
-/* Footer */
-
-.custom-site-footer {
-  background: $secondary-color;
-  border-top: 1px solid black;
-  padding: 30px 0;
-
-  a {
-    color: $primary-color;
-  }
-}
-
-.custom-footer-heading {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: $primary-color;
-}
-
-.footer-col-wrapper {
-  font-size: 15px;
-  color: #c0c0c0
 }
 
 @media (max-width: 660px) {

@@ -1,0 +1,22 @@
+footer {
+  &.custom-site-footer {
+    background: $secondary-color;
+    border-top: 1px solid black;
+    padding: 30px 0;
+
+    a {
+      color: $primary-color;
+    }
+  }
+
+  .custom-footer-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: $primary-color;
+  }
+
+  .footer-col-wrapper {
+    font-size: 15px;
+    color: #c0c0c0
+  }
+}
