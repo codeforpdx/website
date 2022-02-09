@@ -7,23 +7,28 @@ header {
     top: 0px;
     background: $secondary-color;
     z-index: 10;
-    height: 55px;
+    height: 90px;
+  }
+  
+  .nav-bottom-h1{
+    font-size: 50px;
+    padding-top: 0;
+    line-height: 25px;
+    font-weight: 900;
   }
 
   .nav-h1 {
-    text-align: center;
     margin-bottom: 0;
     font-size: 26px;
-    font-weight: bold;
     text-decoration: none;
-    color: $primary-color;
-    padding: 8px 0;
+    padding-left: 110px;
+    padding-top: 4px;
   }
 
   .site-logo {
     position: absolute;
-    left: 20px;
-    top: 3px;
+    left: 15px;
+    top: 12px;
   }
 
   .site-logo > img {
@@ -31,9 +36,8 @@ header {
   }
 
   .custom-site-title, .custom-site-title:visited {
-    color: $primary-color;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
   }
 
   .social-nav-icons {
@@ -42,7 +46,7 @@ header {
     padding: 0;
     text-align: right;
     position: absolute;
-    top: 3px;
+    top: 20%;
     right: 0;
     li {
       display: inline-block;
