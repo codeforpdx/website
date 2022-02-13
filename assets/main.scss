@@ -139,11 +139,13 @@ header {
   box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
 }
 
+
+/* Product Section */
+
 #products h3 a {
   color: #073b7e;
 }
 
-/* Product Section */
 .box-padding {
   padding: 15px 15px 5px 15px;
 }
@@ -160,6 +162,31 @@ header {
 .completed {
   color: purple;
 }
+
+/* NEW Product Section */
+
+#products {
+  border: 1px solid red;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.post-list > li {
+  background-color: #C1EEEA;
+}
+
+
+
+/* Products - Mobile Version */
+// #products h2 {
+//   font-family: 'Montserrat', sans-serif;
+// }
+
+@media(max-width: 375px) {
+  #products {
+    border: 2px solid blue;
+  }  
+}
+
 
 /* Team Section */
 .profile-image {

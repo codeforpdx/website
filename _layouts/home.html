@@ -17,13 +17,20 @@ layout: default
       {% for product in site.products %}
         <li class="shady-box-shadow box-padding">
           <h3>
-            <a href="{{ product.url | absolute_url }}">{{ product.name }}</a>
+            <!-- <a href="{{ product.url | absolute_url }}">{{ product.name }}</a> -->
+            <a href="{{ product.link | absolute_url }}" target="_blank">{{ product.name }}</a>
           </h3>
           <div>
-            <h4>Problem</h4>
+            <img
+              src="{{ product.logo | absolute_url }}"
+              alt="{{ product.name }}"
+              title="{{ product.name }}"
+            />
+            <!-- <h4>Problem</h4>
             <p>{{ product.problem }}</p>
             <h4>Proposal</h4>
-            <p>{{ product.proposal }}</p>
+            <p>{{ product.proposal }}</p> -->
+            <p>{{ product.description }}</p>
 
             {% if product.status == "Active" %}
               <p class="status active">Current Status: {{ product.status }}</p>
