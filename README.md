@@ -18,18 +18,18 @@ This is the repo for our official [website](https://codeforpdx.org). As a Code f
  - To learn about our workflow and how to get started. View the [CONTRIBUTING.MD](./CONTRIBUTING.md) doc.
 
 ## Project Layout
- - File Organization is similar to any other project built with Jekyll with the following organization for html and asset files
+ - File Organization is similar to any other project built with Jekyll with the following organization for HTML and asset files.
 
-The main page has different sections. Each section has its own file for html, and assets (css, images, js).
+The main page has different sections. Each section has its own file for HTML, and assets (CSS, images, JS).
 
-For example lets look at the Products section. The relevant html and asset files for the products section can be found here:
+For example lets look at the Products section. The relevant HTML and asset files for the products section can be found here:
 
 - HTML file: `sections/products.html`
 - CSS file: `assets/stylesheets/products.scss`
 - Images dir: `assets/images/products/*`
 - Javascript dir: `assets/javascript/products/*`
  
-Products is a collection and each individual product can be found in its collection directory. Jekyll will look for the products collection in the directory `_products` by default. Inside that directory you'll find each product and the data that is used to build the secion.
+Products is a collection and each individual product can be found in its collection directory. Jekyll will look for the products collection in the directory `_products` by default. Inside that directory you'll find each product and the data that is used to build the section.
 
 ## Design Files 
 
