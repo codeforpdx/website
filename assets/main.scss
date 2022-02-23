@@ -181,13 +181,14 @@ body {
 }
 
 @media (max-width: 549px) {
-  .social-nav-icons {
+  header .social-nav-icons {
     top: 8.5px;
     margin-right: 5px;
     img {
-      margin: 3px;
-      height: 24px;
-      width: 24px;
+      margin: 8px;
+      height: 32px;
+      width: 32px;
+      margin-top: 16px;
     }
   }
 
@@ -197,21 +198,28 @@ body {
     margin-top: 3rem;
   }
 
-  .sticky-nav-header {
-    height: 50px;
+  body .sticky-nav-header {
+    height: 80px;
   }
 
-  .site-logo {
-    left: 10px;
+  header .site-logo {
+    left: 13px;
+    top: 11px;
   }
 
-  .site-logo > img {
-    height: 60px;
+  header .site-logo > img {
+    height: 58px;
   }
 
-  .nav-h1 {
-    font-size: 24px;
-    padding: 7px 0;
+  header .nav-h1 {
+    font-size: 23px;
+    padding-left: 98px;
+  }
+
+  header .nav-bottom-h1{
+    font-size: 44px;
+    padding-top: 0;
+    line-height: 25px;
   }
 
   .profile-info-contact a img {
@@ -236,29 +244,38 @@ body {
 }
 
 @media (max-width: 375px) {
-  .sticky-nav-header {
-    height: 45px;
+  body .sticky-nav-header {
+    height: 60px;
   }
 
-  .site-logo {
-    left: 5px;
+  header .site-logo {
+    left: 10px;
+    top: 11px;
   }
 
-  .site-logo > img {
-    height: 53px;
+  header .site-logo > img {
+    height: 40px;
   }
 
-  .nav-h1 {
-    padding: 5px 0;
+  header .nav-h1 {
+    font-size: 17px;
+    padding-left: 73px;
   }
 
-  .social-nav-icons {
-    top: 9.5px;
+  header .nav-bottom-h1{
+    font-size: 33px;
+    padding-top: 0;
+    line-height: 19px;
+  }
+
+  header .social-nav-icons {
+    top: 6px;
     margin-right: 3px;
     img {
-      margin: 2px;
-      height: 20px;
-      width: 20px;
+      margin: 5px;
+      height: 24px;
+      width: 24px;
+      margin-top: 12px;
     }
   }
 }
