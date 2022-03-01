@@ -48,11 +48,13 @@ header {
     position: absolute;
     top: 20%;
     right: 0;
+    padding-right: 15px;
     li {
       display: inline-block;
     };
     img {
       margin: 5px;
+      margin-left: 25px;
       height: 40px;
       width: 40px
     }
