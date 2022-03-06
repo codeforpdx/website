@@ -173,21 +173,36 @@ header {
 
 /* NEW Product Section */
 
+.products-container {
+  border: 2px solid purple;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
 #products {
   border: 1px solid red;
   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
 
-.post-list {
+.products-list {
   border: 1px solid blue;
+  width: 2000px;
+  position: relative;
+  -webkit-transition: left 0.3s ease;
 }
 
-.post-list > li {
+.products-li {
   background-color: #C1EEEA;
   width: 304px;
   height: 374px;
+  float: left;
+  margin-right: 35px;
 }
 
+.right-arrow {
+  float: right;
+}
 
 
 /* Products - Mobile Version */
