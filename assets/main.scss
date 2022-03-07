@@ -182,7 +182,8 @@ header {
 #products {
   border: 1px solid red;
   font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
+  position: relative;
+  // overflow: hidden;
 }
 
 .products-list {
@@ -201,7 +202,8 @@ header {
 }
 
 .right-arrow {
-  float: right;
+  position: absolute;
+  top: 60%;
 }
 
 
