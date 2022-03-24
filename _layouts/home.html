@@ -12,20 +12,22 @@ layout: default
   </section>
 
   <script>
-    console.log('script loaded')
     var listItemLeft = 0
     var right = 0
     var left = 0
     var position = 0;
 
-    function move() {
-        if (position <= 4) {
-            position++;
-        } else {
-            position = 0;
-        }
-        
-        moduleOffset =  document.querySelector(".products-li").offsetWidth + 35;
+    console.log('global position:', position)
+
+    function moveRight() {
+      console.log('moveRight() clicked')
+      if (position <= 4) {
+          position++;
+      } else {
+          position = 0;
+      }
+
+      moduleOffset =  document.querySelector(".products-li").offsetWidth + 35;
         console.log('moduleOffset:', moduleOffset)
         console.log('Hello there')
         
@@ -34,14 +36,37 @@ layout: default
         
         productsList.style.left = -( position* moduleOffset ) + "px";
         console.log('position:', position)
-        
     }
 
-    setInterval(move, 1000);
+    function moveLeft() {
+      console.log('moveLeft() clicked')
+      if (position <= 4 && position > 0) {
+          position--;
+      } else {
+          position = 0;
+      }
+      moduleOffset =  document.querySelector(".products-li").offsetWidth + 35;
+        console.log('moduleOffset:', moduleOffset)
+        console.log('Hello there')
+        
+        productsList = document.querySelector(".products-list");
+        console.log('productsList:', productsList)
+        
+        productsList.style.left = -( position* moduleOffset ) + "px";
+        console.log('position:', position)
+    }
+    // setInterval(move, 2000);
   </script>
 
   <section id="products">
     {% include section_header.html content="Our Products" %}
+    <img
+      src="/assets/new-site-images/arrow-left.png"
+      class="left-arrow"
+      alt="left arrow"
+      title="left arrow"
+      onClick="moveLeft()"
+      />
     <div class="products-container">
     <ul class="post-list products-list">
       {% for product in site.products %}
@@ -59,8 +84,8 @@ layout: default
             <!-- <h4>Problem</h4>
             <p>{{ product.problem }}</p>
             <h4>Proposal</h4>
-            <p>{{ product.proposal }}</p> -->
-            <p>{{ product.description }}</p>
+            <p class="product-proposal">{{ product.proposal }}</p> -->
+            <p class="product-description">{{ product.description }}</p>
 
             {% if product.status == "Active" %}
               <p class="status active">Current Status: {{ product.status }}</p>
@@ -80,6 +105,7 @@ layout: default
       class="right-arrow"
       alt="right arrow"
       title="right arrow"
+      onClick="moveRight()"
       />
   </section>
 
