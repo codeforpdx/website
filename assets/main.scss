@@ -1,15 +1,23 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
+// $content-width: 100%;
 @import "minima";
 
+
 $primary-color: #1ef7e2eb;
-$secondary-color: #2C2E3A;
+$secondary-color: #272932;
+$tertiary-color: #ECECEC;
 
 @import "header";
 @import "footer";
 @import "products";
+
+/* override minima wrapper to fill section backgrounds */
+.wrapper{
+  padding: 0px;
+  max-width: 100%;
+}
 
 body {
   color: #000;
@@ -32,13 +40,51 @@ body {
 
 .home section h2 {
   text-align: center;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .section-header {
   margin-right: 0.25rem;
   margin-left: 0.25rem;
+}
+
+section:nth-of-type(odd){
+  background-color: $tertiary-color;
+}
+
+section:nth-of-type(even){
+  background-color: $secondary-color;
+}
+
+.about{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img{
+    order: 2;
+    float: right;
+    padding: 5px 0px;
+    width: 40%;
+  }
+  div{
+    align-items: center;
+    width: 50%;
+    margin-top: 30px;
+  }
+  h1{
+    font-size: 55px;
+    font-weight: 500;
+  }
+  h4{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  p{
+    font-size: 16px;
+  }
 }
 
 .grid-container {
@@ -173,7 +219,37 @@ body {
   }
 }
 
+@media (max-width: 960px) {
+  .about{
+    align-items: center; 
+    width: 90%;   
+    display: flex;
+    flex-direction: column;
+    img{
+      order: 0;
+      display: block;
+      // margin-top: -200px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    div{
+      width: 100%;
+      text-align: center;
+      
+    }
+    h1{
+      font-size: 36px;
+    }
+    h4{
+      font-size: 14px;
+    }
+  }
+  
+}
+
 @media (max-width: 660px) {
+
   .grid-container {
     grid-template-columns: 210px 210px;
     grid-auto-rows: 100px;
@@ -194,8 +270,6 @@ body {
 
   .home section h2 {
     text-align: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
   }
 
   body .sticky-nav-header {
