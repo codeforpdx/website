@@ -150,73 +150,103 @@ header {
 
 /* Product Section */
 
-#products h3 a {
-  color: #073b7e;
+#products h3 {
+  text-align: center;
+  font-weight: 600;
 }
 
-.box-padding {
-  padding: 15px 15px 5px 15px;
+#products h3 a {
+  color: black;
+  text-decoration: underline;
 }
 
 .status {
-  font-weight: bold;
+  font-weight: 600;
 }
-.active {
-  color: green;
-}
-.on-hold {
-  color: red;
-}
-.completed {
-  color: purple;
-}
+// .active {
+//   color: green;
+// }
+// .on-hold {
+//   color: red;
+// }
+// .completed {
+//   color: purple;
+// }
 
 /* NEW Product Section */
 
 .products-container {
-  border: 2px solid purple;
   overflow: hidden;
-  margin: 0 20px;
+  margin: 0 auto;
+  width: 982px;
 }
 
 #products {
-  border: 1px solid red;
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  // overflow: hidden;
 }
 
 .products-list {
-  border: 1px solid blue;
-  width: 2000px;
+  width: 3000px;
   position: relative;
-  -webkit-transition: left 0.3s ease;
+  transition: left 1s ease;
+  left: 0;
 }
 
 .products-li {
   background-color: #C1EEEA;
-  width: 304px;
-  height: 374px;
+  width: 290px;
+  height: 344px;
   float: left;
   margin-right: 35px;
+  padding: 15px 7px;
+}
+
+.products-li > div {
+  margin-left: 20px;
 }
 
 .right-arrow {
   position: absolute;
   top: 60%;
+  left: 98%;
 }
 
-
-/* Products - Mobile Version */
-// #products h2 {
-//   font-family: 'Montserrat', sans-serif;
-// }
-
-@media(max-width: 375px) {
-  #products {
-    border: 2px solid blue;
-  }  
+.left-arrow {
+  position: absolute;
+  top: 60%;
+  left: 0;
 }
+
+/* 1275px breakpoint */
+
+@media(max-width: 1275px) {
+  .products-container {
+    width: 643px;
+  }
+}
+
+@media(max-width: 950px) {
+  .products-container {
+    width: 304px;
+  }
+}
+
+  @media(max-width: 600px) {
+    .products-container {
+      width: 304px;
+    }
+
+    .products-li {
+      background-color: #C1EEEA;
+      width: 290px;
+      height: 344px;
+      float: left;
+      margin-right: 35px;
+      padding: 15px 7px;
+    }
+}
+
 
 
 /* Team Section */
