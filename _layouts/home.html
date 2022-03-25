@@ -76,15 +76,18 @@ layout: default
             <a href="{{ product.link | absolute_url }}" target="_blank">{{ product.name }}</a>
           </h3>
           <div>
-            <img
+            <div class="product-img-wrapper">
+              <img
               src="{{ product.logo | absolute_url }}"
               alt="{{ product.name }}"
               title="{{ product.name }}"
-            />
+              />
+            </div>
+            
             <!-- <h4>Problem</h4>
             <p>{{ product.problem }}</p>
             <h4>Proposal</h4>
-            <p class="product-proposal">{{ product.proposal }}</p> -->
+            <p>{{ product.proposal }}</p> -->
             <p class="product-description">{{ product.description }}</p>
 
             {% if product.status == "Active" %}
