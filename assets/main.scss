@@ -210,43 +210,8 @@ section:nth-of-type(even) {
 }
 
 @media (max-width: 549px) {
-  header .social-nav-icons {
-    top: 8.5px;
-    margin-right: 5px;
-    img {
-      margin: 8px;
-      height: 32px;
-      width: 32px;
-      margin-top: 16px;
-    }
-  }
-
   .home section h2 {
     text-align: center;
-  }
-
-  body .sticky-nav-header {
-    height: 80px;
-  }
-
-  header .site-logo {
-    left: 13px;
-    top: 11px;
-  }
-
-  header .site-logo > img {
-    height: 58px;
-  }
-
-  header .nav-h1 {
-    font-size: 23px;
-    padding-left: 98px;
-  }
-
-  header .nav-bottom-h1 {
-    font-size: 44px;
-    padding-top: 0;
-    line-height: 25px;
   }
 
   .profile-info-contact a img {
@@ -267,43 +232,6 @@ section:nth-of-type(even) {
     justify-content: center;
     gap: 15px 0px;
     padding: 10px;
-  }
-}
-
-@media (max-width: 375px) {
-  body .sticky-nav-header {
-    height: 60px;
-  }
-
-  header .site-logo {
-    left: 10px;
-    top: 11px;
-  }
-
-  header .site-logo > img {
-    height: 40px;
-  }
-
-  header .nav-h1 {
-    font-size: 17px;
-    padding-left: 73px;
-  }
-
-  header .nav-bottom-h1 {
-    font-size: 33px;
-    padding-top: 0;
-    line-height: 19px;
-  }
-
-  header .social-nav-icons {
-    top: 6px;
-    margin-right: 3px;
-    img {
-      margin: 5px;
-      height: 24px;
-      width: 24px;
-      margin-top: 12px;
-    }
   }
 }
 
