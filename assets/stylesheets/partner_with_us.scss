@@ -23,7 +23,6 @@
         padding-bottom: 3rem;
     }
     .talk {
-        margin-top: 30px;
         width: 70%;
         height: 50px;
     }
@@ -54,6 +53,7 @@
         }
         h2 {
             text-align: center !important;
+            margin-bottom: 0px;
         }
         p {
             text-align: left;
@@ -78,7 +78,7 @@
             width: 40%;
         }
         p {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 }
