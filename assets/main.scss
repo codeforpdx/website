@@ -11,6 +11,7 @@ $tertiary-color: #ececec;
 @import "header";
 @import "footer";
 @import "products";
+@import "support";
 
 /* override minima wrapper to fill section backgrounds */
 .wrapper {
@@ -51,15 +52,25 @@ body {
 /* alternate section background colors */
 section:nth-of-type(odd) {
   background-color: $tertiary-color;
+  button {
+    font-size: 24px;
+    color: white;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 section:nth-of-type(even) {
   color: white;
   background-color: $secondary-color;
   button {
+    font-size: 24px;
     background-color: $primary-color;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
   }
 }
 
