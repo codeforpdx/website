@@ -1,5 +1,5 @@
 header {
-  padding-left:10px;
+  padding-left: 10px;
   padding-right: 10px;
 
   &.sticky-nav-header {
@@ -9,8 +9,8 @@ header {
     z-index: 10;
     height: 90px;
   }
-  
-  .nav-bottom-h1{
+
+  .nav-bottom-h1 {
     font-size: 50px;
     padding-top: 0;
     line-height: 25px;
@@ -35,7 +35,8 @@ header {
     height: 65px;
   }
 
-  .custom-site-title, .custom-site-title:visited {
+  .custom-site-title,
+  .custom-site-title:visited {
     color: white;
     text-decoration: none;
   }
@@ -51,12 +52,12 @@ header {
     padding-right: 15px;
     li {
       display: inline-block;
-    };
+    }
     img {
       margin: 5px;
       margin-left: 25px;
       height: 40px;
-      width: 40px
+      width: 40px;
     }
   }
 }
