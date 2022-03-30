@@ -20,3 +20,11 @@ There are two ways to install the project:
 To install via Docker you will first need to install Docker and Docker Compose.
 
 Refer to the [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) sites for installation instructions for your specific OS.
+
+### Windows 10 Local Machine
+ 1)Complete Install with Bundler Above. (The local host above will not be your loacal host number.)
+ 2)Once you pull the files got to Gemfile and delete the line with 'ruby "2.7.2"'.
+ 3)Completly delete Gemfile.lock .
+ 5)Now you can run 'bundle install' in comand line to regenerate a new Gemfile.lock (Don't Forget to do this before any push as well.)
+ 4)run 'bundle add webrick' in the command line. (Only if you are running Ruby 3.0.0+)
+ -Resourses for Windows Install (https://jekyllrb.com/docs/)
