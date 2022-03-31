@@ -5,7 +5,7 @@
 @import "minima";
 
 $primary-color: #1ef7e2eb;
-$secondary-color: #2C2E3A;
+$secondary-color: #2c2e3a;
 
 @import "header";
 @import "footer";
@@ -32,7 +32,7 @@ body {
 
 .splash-header {
   border-top: 5px solid $secondary-color;
-  border-bottom: 1px solid #1e1e1e;;
+  border-bottom: 1px solid #1e1e1e;
   min-height: 55.95px;
   position: relative;
   background: $secondary-color;
@@ -61,8 +61,8 @@ body {
 }
 
 .align-image-360 {
-   position: relative;
-   img {
+  position: relative;
+  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,56 +73,19 @@ body {
     width: auto;
     height: auto;
     margin: auto;
-   }
+  }
 }
 
 .shady-box-shadow {
-  -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-  -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-  box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-}
-
-<<<<<<< HEAD
-=======
-.profile-container {
-  overflow: auto;
-  position: relative;
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
 }
 
 .role {
   font-size: 2vw;
 }
 
-.profile-image-container {
-  width: 28%;
-  display: inline-block;
-  float: left;
-}
-
-.profile-info-container {
-  width: 70%;
-  display: inline-block;
-  float: right;
-  font-size: 3vw;
-  h3, p {
-    margin-bottom: 0;
-  };
-}
-
-.profile-info-contact {
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 70%;
-  a img {
-    width: 22px;
-    height: 22px;
-    margin-right: 1rem;
-  }
-}
-
->>>>>>> 9968c52772c9d5462bb82c002db14a2d0099e3d7
 /* Donate Button */
 
 .donate-button {
@@ -194,15 +157,6 @@ body {
     font-size: 24px;
     padding: 7px 0;
   }
-<<<<<<< HEAD
-=======
-
-  .profile-info-contact a img {
-    width: 16px;
-    height: 16px;
-    margin-right: 0.5rem;
-  }
->>>>>>> 9968c52772c9d5462bb82c002db14a2d0099e3d7
 }
 
 @media (max-width: 475px) {
@@ -242,4 +196,3 @@ body {
     }
   }
 }
-
