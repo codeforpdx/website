@@ -2,10 +2,23 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+// $content-width: 100%;
 @import "minima";
 
 $primary-color: #1ef7e2eb;
-$secondary-color: #2C2E3A;
+$secondary-color: #272932;
+$tertiary-color: #ececec;
+
+@import "header";
+@import "footer";
+@import "products";
+@import "volunteer";
+
+/* override minima wrapper to fill section backgrounds */
+.wrapper {
+  padding: 0px;
+  max-width: 100%;
+}
 
 body {
   color: #000;
@@ -37,8 +50,8 @@ body {
 /* Header */
 
 header {
-  padding-left:10px;
-  padding-right: 10px
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .sticky-nav-header {
@@ -51,7 +64,7 @@ header {
 
 .splash-header {
   border-top: 5px solid $secondary-color;
-  border-bottom: 1px solid #1e1e1e;;
+  border-bottom: 1px solid #1e1e1e;
   min-height: 55.95px;
   position: relative;
   background: $secondary-color;
@@ -69,11 +82,11 @@ header {
   right: 0;
   li {
     display: inline-block;
-  };
+  }
   img {
     margin: 5px;
     height: 40px;
-    width: 40px
+    width: 40px;
   }
 }
 
@@ -89,7 +102,8 @@ header {
   height: 65px;
 }
 
-.custom-site-title, .custom-site-title:visited {
+.custom-site-title,
+.custom-site-title:visited {
   color: $primary-color;
   text-decoration: none;
   font-weight: 600;
@@ -99,13 +113,58 @@ header {
 
 .home section h2 {
   text-align: center;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .section-header {
   margin-right: 0.25rem;
   margin-left: 0.25rem;
+}
+
+section:nth-of-type(odd) {
+  background-color: $tertiary-color;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background-color: $secondary-color;
+
+  button {
+    background-color: $primary-color;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+.about {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    order: 2;
+    float: right;
+    padding: 5px 0px;
+    width: 40%;
+  }
+  div {
+    align-items: center;
+    width: 50%;
+    margin-top: 30px;
+  }
+  h1 {
+    font-size: 55px;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 
 .grid-container {
@@ -118,8 +177,8 @@ header {
 }
 
 .align-image-360 {
-   position: relative;
-   img {
+  position: relative;
+  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,13 +189,13 @@ header {
     width: auto;
     height: auto;
     margin: auto;
-   }
+  }
 }
 
 .shady-box-shadow {
-  -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-  -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-  box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
 }
 
 #products h3 a {
@@ -170,9 +229,9 @@ header {
   max-width: 200px;
   max-height: 200px;
 
-  -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 .profile-container {
@@ -195,9 +254,10 @@ header {
   display: inline-block;
   float: right;
   font-size: 3vw;
-  h3, p {
+  h3,
+  p {
     margin-bottom: 0;
-  };
+  }
 }
 
 .profile-info-contact {
@@ -282,7 +342,7 @@ header {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #c0c0c0
+  color: #c0c0c0;
 }
 
 @media (max-width: 660px) {
@@ -305,8 +365,6 @@ header {
 
   .home section h2 {
     text-align: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
   }
 
   .sticky-nav-header {
