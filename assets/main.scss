@@ -12,6 +12,7 @@ $tertiary-color: #ececec;
 @import "footer";
 @import "products";
 @import "about";
+@import "partner_with_us";
 
 /* override minima wrapper to fill section backgrounds */
 .wrapper {
@@ -55,6 +56,31 @@ section:nth-of-type(odd) {
 
 section:nth-of-type(even) {
   background-color: $secondary-color;
+}
+
+/* alternate section background colors */
+section:nth-of-type(odd) {
+  background-color: $tertiary-color;
+  button {
+    font-size: 24px;
+    color: white;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background-color: $secondary-color;
+  button {
+    font-size: 24px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .grid-container {
@@ -190,6 +216,12 @@ section:nth-of-type(even) {
   }
 }
 
+@media (max-width: 960px) {
+  .home section h2 {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 660px) {
   .grid-container {
     grid-template-columns: 210px 210px;
@@ -198,17 +230,6 @@ section:nth-of-type(even) {
 }
 
 @media (max-width: 549px) {
-  header .social-nav-icons {
-    top: 8.5px;
-    margin-right: 5px;
-    img {
-      margin: 8px;
-      height: 32px;
-      width: 32px;
-      margin-top: 16px;
-    }
-  }
-
   .home section h2 {
     text-align: center;
   }
