@@ -66,6 +66,20 @@ body {
   }
 }
 
+@media (min-width: 961px) {
+  #partners .grid-container {
+    min-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  #partners a {
+    width: 310px;
+    height: 145px;
+  }
+}
+
 .align-image-360 {
    position: relative;
    img {
