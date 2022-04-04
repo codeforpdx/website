@@ -2,6 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+// $content-width: 100%;
 @import "minima";
 
 $primary-color: #1ef7e2eb;
@@ -13,12 +14,7 @@ $tertiary-color: #ececec;
 @import "products";
 @import "about";
 @import "partner_with_us";
-
-/* override minima wrapper to fill section backgrounds */
-.wrapper {
-  padding: 0px;
-  max-width: 100%;
-}
+@import "volunteer";
 @import "support";
 
 /* override minima wrapper to fill section backgrounds */
@@ -42,6 +38,68 @@ body {
   fill: #c0c0c0;
   padding-right: 5px;
   vertical-align: text-top;
+}
+
+/* Header */
+
+header {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sticky-nav-header {
+  position: sticky;
+  top: 0px;
+  background: $secondary-color;
+  z-index: 10;
+  height: 55px;
+}
+
+.splash-header {
+  border-top: 5px solid $secondary-color;
+  border-bottom: 1px solid #1e1e1e;
+  min-height: 55.95px;
+  position: relative;
+  background: $secondary-color;
+}
+
+/* social icons in nav bar */
+
+.social-nav-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  li {
+    display: inline-block;
+  }
+  img {
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* Logo and title layout */
+
+.site-logo {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+}
+
+.site-logo > img {
+  height: 65px;
+}
+
+.custom-site-title,
+.custom-site-title:visited {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* body */
@@ -112,6 +170,51 @@ section:nth-of-type(even) {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+  }
+}
+
+section:nth-of-type(odd) {
+  background-color: $tertiary-color;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background-color: $secondary-color;
+
+  button {
+    background-color: $primary-color;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+.about {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    order: 2;
+    float: right;
+    padding: 5px 0px;
+    width: 40%;
+  }
+  div {
+    align-items: center;
+    width: 50%;
+    margin-top: 30px;
+  }
+  h1 {
+    font-size: 55px;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 16px;
   }
 }
 

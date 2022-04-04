@@ -45,6 +45,10 @@ collections:
     output: true
   partners:
   sponsors:
+  team:
+    sort_by: order
+  volunteer:
+    sort_by: order
 
 defaults:
   - scope:
