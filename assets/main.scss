@@ -58,7 +58,8 @@ body {
     gap: 15px 0px;
     padding: 10px;
   }
-  #sponsors .grid-container {
+  #sponsors .grid-container,
+  #partners .grid-container {
     grid-template-columns: 75vw;
     grid-auto-rows: 35vw;
     gap: 25px;
