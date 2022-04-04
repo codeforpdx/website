@@ -11,13 +11,8 @@ $tertiary-color: #ececec;
 @import "header";
 @import "footer";
 @import "products";
+@import "about";
 @import "partner_with_us";
-
-/* override minima wrapper to fill section backgrounds */
-.wrapper {
-  padding: 0px;
-  max-width: 100%;
-}
 
 /* override minima wrapper to fill section backgrounds */
 .wrapper {
@@ -53,6 +48,14 @@ body {
 .section-header {
   margin-right: 0.25rem;
   margin-left: 0.25rem;
+}
+/* alternate section background colors */
+section:nth-of-type(odd) {
+  background-color: $tertiary-color;
+}
+
+section:nth-of-type(even) {
+  background-color: $secondary-color;
 }
 
 /* alternate section background colors */
