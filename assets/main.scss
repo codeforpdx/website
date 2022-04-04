@@ -177,13 +177,6 @@ body {
   }
 }
 
-@media (max-width: 660px) {
-  .grid-container {
-    grid-template-columns: 210px 210px;
-    grid-auto-rows: 100px;
-  }
-}
-
 @media (max-width: 549px) {
   header .social-nav-icons {
     top: 8.5px;
