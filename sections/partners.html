@@ -1,0 +1,16 @@
+<section id="partners">
+  {% include section_header.html content="Our Partners" %}
+  <ul class="grid-container post-list">
+    {% for partner in site.partners %}
+      <a class="align-image-360 shady-box-shadow" href="{{ partner.link }}" target="_blank">
+        <li>
+          <img
+            src="{{ partner.logo | absolute_url }}"
+            alt="{{ partner.name }}"
+            title="{{ partner.name }}"
+          />
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
+</section>

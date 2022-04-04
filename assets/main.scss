@@ -20,18 +20,12 @@ $tertiary-color: #ececec;
   max-width: 100%;
 }
 
+@import "header";
+@import "footer";
+@import "products";
+
 body {
   color: #000;
-}
-
-.nav-h1 {
-  text-align: center;
-  margin-bottom: 0;
-  font-size: 26px;
-  font-weight: bold;
-  text-decoration: none;
-  color: $primary-color;
-  padding: 8px 0;
 }
 
 .custom-page-content {
@@ -198,28 +192,6 @@ section:nth-of-type(even) {
   box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
 }
 
-#products h3 a {
-  color: #073b7e;
-}
-
-/* Product Section */
-.box-padding {
-  padding: 15px 15px 5px 15px;
-}
-
-.status {
-  font-weight: bold;
-}
-.active {
-  color: green;
-}
-.on-hold {
-  color: red;
-}
-.completed {
-  color: purple;
-}
-
 /* Team Section */
 .profile-image {
   -webkit-border-radius: 100px;
@@ -353,13 +325,14 @@ section:nth-of-type(even) {
 }
 
 @media (max-width: 549px) {
-  .social-nav-icons {
+  header .social-nav-icons {
     top: 8.5px;
     margin-right: 5px;
     img {
-      margin: 3px;
-      height: 24px;
-      width: 24px;
+      margin: 8px;
+      height: 32px;
+      width: 32px;
+      margin-top: 16px;
     }
   }
 
@@ -367,21 +340,28 @@ section:nth-of-type(even) {
     text-align: center;
   }
 
-  .sticky-nav-header {
-    height: 50px;
+  body .sticky-nav-header {
+    height: 80px;
   }
 
-  .site-logo {
-    left: 10px;
+  header .site-logo {
+    left: 13px;
+    top: 11px;
   }
 
-  .site-logo > img {
-    height: 60px;
+  header .site-logo > img {
+    height: 58px;
   }
 
-  .nav-h1 {
-    font-size: 24px;
-    padding: 7px 0;
+  header .nav-h1 {
+    font-size: 23px;
+    padding-left: 98px;
+  }
+
+  header .nav-bottom-h1 {
+    font-size: 44px;
+    padding-top: 0;
+    line-height: 25px;
   }
 
   .profile-info-contact a img {
@@ -406,29 +386,38 @@ section:nth-of-type(even) {
 }
 
 @media (max-width: 375px) {
-  .sticky-nav-header {
-    height: 45px;
+  body .sticky-nav-header {
+    height: 60px;
   }
 
-  .site-logo {
-    left: 5px;
+  header .site-logo {
+    left: 10px;
+    top: 11px;
   }
 
-  .site-logo > img {
-    height: 53px;
+  header .site-logo > img {
+    height: 40px;
   }
 
-  .nav-h1 {
-    padding: 5px 0;
+  header .nav-h1 {
+    font-size: 17px;
+    padding-left: 73px;
   }
 
-  .social-nav-icons {
-    top: 9.5px;
+  header .nav-bottom-h1 {
+    font-size: 33px;
+    padding-top: 0;
+    line-height: 19px;
+  }
+
+  header .social-nav-icons {
+    top: 6px;
     margin-right: 3px;
     img {
-      margin: 2px;
-      height: 20px;
-      width: 20px;
+      margin: 5px;
+      height: 24px;
+      width: 24px;
+      margin-top: 12px;
     }
   }
 }
