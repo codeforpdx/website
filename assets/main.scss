@@ -5,11 +5,19 @@
 @import "minima";
 
 $primary-color: #1ef7e2eb;
-$secondary-color: #2C2E3A;
+$secondary-color: #272932;
+$tertiary-color: #ececec;
 
 @import "header";
 @import "footer";
 @import "products";
+@import "partner_with_us";
+
+/* override minima wrapper to fill section backgrounds */
+.wrapper {
+  padding: 0px;
+  max-width: 100%;
+}
 
 body {
   color: #000;
@@ -32,13 +40,38 @@ body {
 
 .home section h2 {
   text-align: center;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .section-header {
   margin-right: 0.25rem;
   margin-left: 0.25rem;
+}
+
+/* alternate section background colors */
+section:nth-of-type(odd) {
+  background-color: $tertiary-color;
+  button {
+    font-size: 24px;
+    color: white;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background-color: $secondary-color;
+  button {
+    font-size: 24px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .grid-container {
@@ -51,8 +84,8 @@ body {
 }
 
 .align-image-360 {
-   position: relative;
-   img {
+  position: relative;
+  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -63,13 +96,13 @@ body {
     width: auto;
     height: auto;
     margin: auto;
-   }
+  }
 }
 
 .shady-box-shadow {
-  -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-  -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-  box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
 }
 
 /* Team Section */
@@ -81,9 +114,9 @@ body {
   max-width: 200px;
   max-height: 200px;
 
-  -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 .profile-container {
@@ -106,9 +139,10 @@ body {
   display: inline-block;
   float: right;
   font-size: 3vw;
-  h3, p {
+  h3,
+  p {
     margin-bottom: 0;
-  };
+  }
 }
 
 .profile-info-contact {
@@ -173,6 +207,12 @@ body {
   }
 }
 
+@media (max-width: 960px) {
+  .home section h2 {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 660px) {
   .grid-container {
     grid-template-columns: 210px 210px;
@@ -194,8 +234,6 @@ body {
 
   .home section h2 {
     text-align: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
   }
 
   body .sticky-nav-header {
@@ -216,7 +254,7 @@ body {
     padding-left: 98px;
   }
 
-  header .nav-bottom-h1{
+  header .nav-bottom-h1 {
     font-size: 44px;
     padding-top: 0;
     line-height: 25px;
@@ -262,7 +300,7 @@ body {
     padding-left: 73px;
   }
 
-  header .nav-bottom-h1{
+  header .nav-bottom-h1 {
     font-size: 33px;
     padding-top: 0;
     line-height: 19px;
