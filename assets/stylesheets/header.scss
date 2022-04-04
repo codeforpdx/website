@@ -4,6 +4,7 @@ header {
     background: $secondary-color;
     height: 90px;
     top: 0px;
+    z-index: 10;
   }
 
   .nav-wrapper {
@@ -71,15 +72,25 @@ header {
     }
   }
 
-  @media (max-width: 549px) {
-    &.sticky-nav-header {
-      height: 80px;
-    }
+  @media (max-width: 768px) {
     .hidden-mobile {
       visibility: hidden;
       display: none !important;
       clear: both;
     }
+    .social-nav-icons {
+      margin-top: 29px;
+      li {
+        margin-left: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 549px) {
+    &.sticky-nav-header {
+      height: 80px;
+    }
+
     ul {
       margin-left: 0;
     }
