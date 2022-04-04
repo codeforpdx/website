@@ -1,45 +1,56 @@
 <header class="sticky-nav-header">
-  <div>
-    <a class="site-logo"rel="author" href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/images/rose_logo.png' | absolute_url }}" alt="logo">
-    </a>
-  </div>
+  <div class="nav-wrapper">
+    <div class="container">
+      <a class="site-logo" rel="author" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/rose_logo.png' | absolute_url }}" alt="logo">
+      </a>
+    </div>
 
-  <h1 class="nav-h1">
-    <a class="custom-site-title" rel="author" href="{{ '/' | relative_url }}">
-      Code For </br>
-      <div class = "nav-bottom-h1">PDX</div>
-    </a>
-  </h1>
-
-  <div class=social-nav-icons>
-    <ul>
-      <li>
-        <a href="https://www.meetup.com/{{ site.meetup_username }}" target="_blank">
-          <img
-            src="{{ '/assets/images/social_icons/meetup.png' | absolute_url }}"
-            alt="meetup"
-          />
+    <div class="container">
+      <h1 class="nav-h1">
+        <a class="custom-site-title" rel="author" href="{{ '/' | relative_url }}">
+          Code For </br>
+          <a class="custom-site-title nav-bottom-h1" rel="author" href="{{ '/' | relative_url }}">PDX</a>
         </a>
-      </li>
+      </h1>
+    </div>
 
-      <li>
-        <a href="https://www.github.com/{{ site.github_username }}" target="_blank">
-          <img
-            src="{{ '/assets/images/social_icons/github.png' | absolute_url }}"
-            alt="github"
-          />
-        </a>
-      </li>
+    <div class="container social-nav-icons">
 
-      <li>
-        <a href="https://www.twitter.com/{{ site.twitter_username }}" target="_blank">
-          <img
-            src="{{ '/assets/images/social_icons/twitter.png' | absolute_url }}"
-            alt="twitter"
-          />
-        </a>
-      </li>
-    </ul>
+      <ul>
+        <li class="hidden-mobile">
+          <a href="https://www.linkedin.com/company/{{ site.linkedin_username }}" target="_blank">
+            <img src="{{ '/assets/images/social_icons/linkedin.png' | absolute_url }}" alt="meetup" />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.meetup.com/{{ site.meetup_username }}" target="_blank">
+            <img src="{{ '/assets/images/social_icons/meetup.png' | absolute_url }}" alt="meetup" />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.github.com/{{ site.github_username }}" target="_blank">
+            <img src="{{ '/assets/images/social_icons/github.png' | absolute_url }}" alt="github" />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.twitter.com/{{ site.twitter_username }}" target="_blank">
+            <img src="{{ '/assets/images/social_icons/twitter.png' | absolute_url }}" alt="twitter" />
+          </a>
+        </li>
+
+        <li class="hidden-mobile">
+
+          <a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20PDX&utm_source=CodeForPDXSite"
+            target="_blank">
+            <button>Donate</button>
+          </a>
+
+        </li>
+      </ul>
+    </div>
   </div>
 </header>

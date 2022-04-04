@@ -19,6 +19,12 @@ $tertiary-color: #ececec;
   max-width: 100%;
 }
 
+/* override minima wrapper to fill section backgrounds */
+.wrapper {
+  padding: 0px;
+  max-width: 100%;
+}
+
 body {
   color: #000;
 }
@@ -221,17 +227,6 @@ section:nth-of-type(even) {
 }
 
 @media (max-width: 549px) {
-  header .social-nav-icons {
-    top: 8.5px;
-    margin-right: 5px;
-    img {
-      margin: 8px;
-      height: 32px;
-      width: 32px;
-      margin-top: 16px;
-    }
-  }
-
   .home section h2 {
     text-align: center;
   }
