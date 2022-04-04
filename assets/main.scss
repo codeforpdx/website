@@ -20,6 +20,12 @@ $tertiary-color: #ececec;
   max-width: 100%;
 }
 
+/* override minima wrapper to fill section backgrounds */
+.wrapper {
+  padding: 0px;
+  max-width: 100%;
+}
+
 body {
   color: #000;
 }
@@ -80,6 +86,21 @@ section:nth-of-type(even) {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+  }
+}
+
+/* alternate section background colors */
+section:nth-of-type(odd) {
+  background-color: $tertiary-color;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background-color: $secondary-color;
+  button {
+    background-color: $primary-color;
+    border-radius: 10px;
+    border: none;
   }
 }
 
