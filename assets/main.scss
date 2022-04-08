@@ -111,9 +111,13 @@ section:nth-of-type(even) {
 }
 
 .shady-box-shadow {
-  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
+  box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
+}
+
+.card {
+  background: #fff;
 }
 
 .role {
@@ -154,6 +158,18 @@ section:nth-of-type(even) {
 @media (max-width: 960px) {
   .home section h2 {
     font-size: 20px;
+  }
+  .grid-container {
+    grid-template-columns: 210px;
+    grid-auto-rows: 100px;
+    justify-content: center;
+    gap: 15px 0px;
+    padding: 10px;
+  }
+  #sponsors .grid-container {
+    grid-template-columns: 75vw;
+    grid-auto-rows: 35vw;
+    gap: 25px;
   }
 }
 
