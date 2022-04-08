@@ -3,7 +3,7 @@ name: Dwelling.ly
 description: Support for the unhoused
 status: Active
 link: https://github.com/codeforpdx/dwellingly-app
-logo: /assets/new-site-images/dwellingly.png
+logo: /assets/images/products/dwellingly.png
 ---
 
 <!-- ORIGINAL CODE -->

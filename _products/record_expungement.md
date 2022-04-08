@@ -3,7 +3,7 @@ name: RecordSponge
 description: Legal support and expungement
 status: Maintaining
 link: https://github.com/codeforpdx/recordexpungPDX
-logo: /assets/new-site-images/recordsponge.png
+logo: /assets/images/products/recordsponge.png
 ---
 
 

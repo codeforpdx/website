@@ -3,7 +3,7 @@ name: Open Transit
 description: Public transit optimization
 status: Building
 # link: multiple repos?
-logo: /assets/new-site-images/open-transit.png
+logo: /assets/images/products/open-transit.png
 ---
 
 <!-- ORIGINAL CODE -->
