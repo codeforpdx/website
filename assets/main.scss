@@ -136,7 +136,10 @@ section:nth-of-type(even) {
   align-items: center;
   position: sticky;
   bottom: 0;
-  background-color: #fff;
+  background-color: $secondary-color;
+      -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+      -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+      box-shadow: 3px 0 5px rgba(57, 63, 72, 0.3);
 }
 
 .donate-button button:hover {
@@ -144,7 +147,8 @@ section:nth-of-type(even) {
 }
 
 .donate-button button {
-  background-color: $secondary-color;
+  background-color: $primary-color;
+  z-index: 2;
   border-radius: 15px;
   font-size: 24px;
   font-weight: 500;
@@ -155,7 +159,7 @@ section:nth-of-type(even) {
   height: 50px;
   a {
     text-decoration: none;
-    color: $primary-color;
+    color: $secondary-color;
   }
 }
 
