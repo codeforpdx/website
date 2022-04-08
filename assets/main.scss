@@ -145,7 +145,7 @@ body {
 /* Donate Button */
 
 .donate-button {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: sticky;
@@ -177,6 +177,11 @@ body {
   .grid-container {
     grid-template-columns: 210px 210px;
     grid-auto-rows: 100px;
+  }
+  .donate-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
