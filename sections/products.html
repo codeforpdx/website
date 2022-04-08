@@ -1,0 +1,27 @@
+<section id="products">
+  {% include section_header.html content="Our Products" %}
+  <ul class="post-list">
+    {% for product in site.products %}
+      <li class="shady-box-shadow box-padding">
+        <h3>
+          <a href="{{ product.url | absolute_url }}">{{ product.name }}</a>
+        </h3>
+        <div>
+          <h4>Problem</h4>
+          <p>{{ product.problem }}</p>
+          <h4>Proposal</h4>
+          <p>{{ product.proposal }}</p>
+
+          {% if product.status == "Active" %}
+            <p class="status active">Current Status: {{ product.status }}</p>
+          {% elsif product.status == "On Hold" %}
+            <p class="status on-hold">Current Status: {{ product.status }}</p>
+          {% else %}
+            <p class="status completed">Current Status: {{ product.status }}</p>
+          {% endif %}
+
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
