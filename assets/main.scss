@@ -2,14 +2,26 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+// $content-width: 100%;
 @import "minima";
 
 $primary-color: #1ef7e2eb;
-$secondary-color: #2C2E3A;
+$secondary-color: #272932;
+$tertiary-color: #ececec;
 
 @import "header";
 @import "footer";
 @import "products";
+@import "about";
+@import "partner_with_us";
+@import "volunteer";
+@import "support";
+
+/* override minima wrapper to fill section backgrounds */
+.wrapper {
+  padding: 0px;
+  max-width: 100%;
+}
 
 body {
   color: #000;
@@ -28,17 +40,49 @@ body {
   vertical-align: text-top;
 }
 
+.custom-site-title,
+.custom-site-title:visited {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* body */
 
 .home section h2 {
   text-align: center;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .section-header {
   margin-right: 0.25rem;
   margin-left: 0.25rem;
+}
+
+/* alternate section background colors */
+section:nth-of-type(odd) {
+  background-color: $tertiary-color;
+  button {
+    font-size: 24px;
+    color: white;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background-color: $secondary-color;
+  button {
+    font-size: 24px;
+    background-color: $primary-color;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .grid-container {
@@ -81,8 +125,8 @@ body {
 }
 
 .align-image-360 {
-   position: relative;
-   img {
+  position: relative;
+  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -93,7 +137,7 @@ body {
     width: auto;
     height: auto;
     margin: auto;
-   }
+  }
 }
 
 .shady-box-shadow {
@@ -106,76 +150,14 @@ body {
   background: #fff;
 }
 
-/* Team Section */
-.profile-image {
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  width: 100%;
-  height: 100%;
-  max-width: 200px;
-  max-height: 200px;
-
-  -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-}
-
-.profile-container {
-  overflow: auto;
-  position: relative;
-}
-
 .role {
   font-size: 2vw;
 }
 
-.profile-image-container {
-  width: 28%;
-  display: inline-block;
-  float: left;
+#sponsors,
+#partners {
+  padding-bottom: 3rem;
 }
-
-.profile-info-container {
-  width: 70%;
-  display: inline-block;
-  float: right;
-  font-size: 3vw;
-  h3, p {
-    margin-bottom: 0;
-  };
-}
-
-.profile-info-contact {
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 70%;
-  a img {
-    width: 22px;
-    height: 22px;
-    margin-right: 1rem;
-  }
-}
-
-.team-member-contact {
-  font-size: 22px;
-  visibility: hidden;
-}
-
-#team {
-  ol {
-    margin-left: 0;
-  }
-
-  li {
-    padding: 10px;
-    list-style: none;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-}
-
 /* Donate Button */
 
 .donate-button {
@@ -207,108 +189,43 @@ body {
   }
 }
 
-@media (max-width: 549px) {
-  header .social-nav-icons {
-    top: 8.5px;
-    margin-right: 5px;
-    img {
-      margin: 8px;
-      height: 32px;
-      width: 32px;
-      margin-top: 16px;
-    }
+@media (max-width: 960px) {
+  .home section h2 {
+    font-size: 20px;
   }
+  .grid-container {
+    grid-template-columns: 210px;
+    grid-auto-rows: 100px;
+    justify-content: center;
+    gap: 15px 0px;
+    padding: 10px;
+  }
+  #sponsors .grid-container {
+    grid-template-columns: 75vw;
+    grid-auto-rows: 35vw;
+    gap: 25px;
+  }
+}
 
+@media (max-width: 660px) {
+  .grid-container {
+    grid-template-columns: 210px 210px;
+    grid-auto-rows: 100px;
+  }
+}
+
+@media (max-width: 549px) {
   .home section h2 {
     text-align: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-  }
-
-  body .sticky-nav-header {
-    height: 80px;
-  }
-
-  header .site-logo {
-    left: 13px;
-    top: 11px;
-  }
-
-  header .site-logo > img {
-    height: 58px;
-  }
-
-  header .nav-h1 {
-    font-size: 23px;
-    padding-left: 98px;
-  }
-
-  header .nav-bottom-h1{
-    font-size: 44px;
-    padding-top: 0;
-    line-height: 25px;
-  }
-
-  .profile-info-contact a img {
-    width: 16px;
-    height: 16px;
-    margin-right: 0.5rem;
-  }
-
-  .team-member-contact {
-    font-size: 16px;
   }
 }
 
-
-
-@media (max-width: 375px) {
-  body .sticky-nav-header {
-    height: 60px;
-  }
-
-  header .site-logo {
-    left: 10px;
-    top: 11px;
-  }
-
-  header .site-logo > img {
-    height: 40px;
-  }
-
-  header .nav-h1 {
-    font-size: 17px;
-    padding-left: 73px;
-  }
-
-  header .nav-bottom-h1{
-    font-size: 33px;
-    padding-top: 0;
-    line-height: 19px;
-  }
-
-  header .social-nav-icons {
-    top: 6px;
-    margin-right: 3px;
-    img {
-      margin: 5px;
-      height: 24px;
-      width: 24px;
-      margin-top: 12px;
-    }
-  }
-}
-
-@media (min-width: 740px) {
-  .profile-info-container {
-    font-size: 22px;
-  }
-
-  .role {
-    font-size: 12px;
-  }
-
-  .bio {
-    font-size: 16px;
+@media (max-width: 475px) {
+  .grid-container {
+    grid-template-columns: 210px;
+    grid-auto-rows: 100px;
+    justify-content: center;
+    gap: 15px 0px;
+    padding: 10px;
   }
 }
