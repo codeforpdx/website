@@ -112,11 +112,11 @@ section:nth-of-type(even) {
 
 @media (min-width: 961px) {
   #partners .grid-container {
-    min-width: 1000px;
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    margin: 0 auto;
   }
   #partners a {
     width: 310px;
