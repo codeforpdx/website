@@ -161,24 +161,14 @@ section:nth-of-type(even) {
     font-size: 20px;
   }
   .grid-container {
-    grid-template-columns: 210px;
     grid-auto-rows: 100px;
     justify-content: center;
     gap: 15px 0px;
     padding: 10px;
   }
-  #sponsors .grid-container {
-    grid-template-columns: 75vw;
-    grid-auto-rows: 35vw;
-    gap: 25px;
-  }
 }
 
 @media (max-width: 660px) {
-  .grid-container {
-    grid-template-columns: 210px 210px;
-    grid-auto-rows: 100px;
-  }
   .donate-button{
     display: flex;
     justify-content: center;
@@ -189,25 +179,5 @@ section:nth-of-type(even) {
 @media (max-width: 549px) {
   .home section h2 {
     text-align: center;
-  }
-}
-
-@media (max-width: 475px) {
-  .grid-container {
-    grid-template-columns: 210px;
-    grid-auto-rows: 100px;
-    justify-content: center;
-    gap: 15px 0px;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 960px) {
-  .grid-container {
-    grid-template-columns: 210px;
-    grid-auto-rows: 100px;
-    justify-content: center;
-    gap: 15px 0px;
-    padding: 10px;
   }
 }
