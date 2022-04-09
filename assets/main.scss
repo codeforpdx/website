@@ -16,6 +16,7 @@ $tertiary-color: #ececec;
 @import "partner_with_us";
 @import "volunteer";
 @import "support";
+@import "partners_sponsors";
 
 /* override minima wrapper to fill section backgrounds */
 .wrapper {
@@ -94,36 +95,6 @@ section:nth-of-type(even) {
   padding: 10px;
 }
 
-@media (max-width: 960px) {
-  .grid-container {
-    grid-template-columns: 210px;
-    grid-auto-rows: 100px;
-    justify-content: center;
-    gap: 15px 0px;
-    padding: 10px;
-  }
-  #sponsors .grid-container,
-  #partners .grid-container {
-    grid-template-columns: 75vw;
-    grid-auto-rows: 35vw;
-    gap: 25px;
-  }
-}
-
-@media (min-width: 961px) {
-  #partners .grid-container {
-    max-width: 1000px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  #partners a {
-    width: 310px;
-    height: 145px;
-  }
-}
-
 .align-image-360 {
   position: relative;
   img {
@@ -146,18 +117,10 @@ section:nth-of-type(even) {
   box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
 }
 
-.card {
-  background: #fff;
-}
-
 .role {
   font-size: 2vw;
 }
 
-#sponsors,
-#partners {
-  padding-bottom: 3rem;
-}
 /* Donate Button */
 
 .donate-button {
@@ -198,24 +161,14 @@ section:nth-of-type(even) {
     font-size: 20px;
   }
   .grid-container {
-    grid-template-columns: 210px;
     grid-auto-rows: 100px;
     justify-content: center;
     gap: 15px 0px;
     padding: 10px;
   }
-  #sponsors .grid-container {
-    grid-template-columns: 75vw;
-    grid-auto-rows: 35vw;
-    gap: 25px;
-  }
 }
 
 @media (max-width: 660px) {
-  .grid-container {
-    grid-template-columns: 210px 210px;
-    grid-auto-rows: 100px;
-  }
   .donate-button{
     display: flex;
     justify-content: center;
@@ -226,15 +179,5 @@ section:nth-of-type(even) {
 @media (max-width: 549px) {
   .home section h2 {
     text-align: center;
-  }
-}
-
-@media (max-width: 475px) {
-  .grid-container {
-    grid-template-columns: 210px;
-    grid-auto-rows: 100px;
-    justify-content: center;
-    gap: 15px 0px;
-    padding: 10px;
   }
 }
