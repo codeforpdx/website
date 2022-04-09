@@ -1,3 +1,12 @@
+.card {
+  background: #fff;
+}
+
+#sponsors,
+#partners {
+  padding-bottom: 3rem;
+}
+
 @media (max-width: 960px) {
   #sponsors .grid-container,
   #partners .grid-container {
