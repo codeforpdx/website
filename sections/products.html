@@ -6,14 +6,15 @@
     <ul class="post-list products-list">
       {% for product in site.products %}
       <li class="shady-box-shadow box-padding products-li">
-        <h3>
-          <a href="{{ product.link | absolute_url }}" target="_blank">{{ product.name }}</a>
-        </h3>
-        <div>
-          <div class="product-img-wrapper">
-            <img src="{{ product.logo | absolute_url }}" alt="{{ product.name }}" title="{{ product.name }}" />
-          </div>
-
+        <div class="product-wrap">
+          <h3>
+            <a href="{{ product.link | absolute_url }}" target="_blank">{{ product.name }}</a>
+          </h3>
+        </div>
+        <div class="product-wrap product-img-wrapper">
+          <img src="{{ product.logo | absolute_url }}" alt="{{ product.name }}" title="{{ product.name }}" />
+        </div>
+        <div class="product-wrap">
           <p class="product-description">{{ product.description }}</p>
           {% if product.status == "Active" %}
           <p class="status active">Current Status: {{ product.status }}</p>
@@ -22,7 +23,6 @@
           {% else %}
           <p class="status completed">Current Status: {{ product.status }}</p>
           {% endif %}
-
         </div>
       </li>
       {% endfor %}
@@ -30,34 +30,34 @@
   </div>
   <img src="/assets/images/products/arrow-right.png" class="right-arrow" alt="right arrow" title="right arrow"
     onClick="moveRight()" />
+
+  <script>
+    var listItemLeft = 0
+    var right = 0
+    var left = 0
+    var position = 0;
+
+    function moveRight() {
+      if (position <= 4) {
+        position++;
+      } else {
+        position = 0;
+      }
+
+      moduleOffset = document.querySelector(".products-li").offsetWidth + 35;
+      productsList = document.querySelector(".products-list");
+      productsList.style.left = -(position * moduleOffset) + "px";
+    }
+
+    function moveLeft() {
+      if (position <= 4 && position > 0) {
+        position--;
+      } else {
+        position = 0;
+      }
+      moduleOffset = document.querySelector(".products-li").offsetWidth + 35;
+      productsList = document.querySelector(".products-list");
+      productsList.style.left = -(position * moduleOffset) + "px";
+    }
+  </script>
 </section>
-
-<script>
-  var listItemLeft = 0
-  var right = 0
-  var left = 0
-  var position = 0;
-
-  function moveRight() {
-    if (position <= 4) {
-      position++;
-    } else {
-      position = 0;
-    }
-
-    moduleOffset = document.querySelector(".products-li").offsetWidth + 35;
-    productsList = document.querySelector(".products-list");
-    productsList.style.left = -(position * moduleOffset) + "px";
-  }
-
-  function moveLeft() {
-    if (position <= 4 && position > 0) {
-      position--;
-    } else {
-      position = 0;
-    }
-    moduleOffset = document.querySelector(".products-li").offsetWidth + 35;
-    productsList = document.querySelector(".products-list");
-    productsList.style.left = -(position * moduleOffset) + "px";
-  }
-</script>
