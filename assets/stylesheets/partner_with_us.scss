@@ -27,9 +27,11 @@ section#partner_with_us {
             width: 70%;
             height: 50px;
             margin-top: 50px;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
-
+        .chat{
+            padding-bottom: 3rem;
+        }
         .teamwork {
             margin: auto;
             padding: 15px 0px;
@@ -72,6 +74,7 @@ section#partner_with_us {
             }
             .talk {
                 width: 30%;
+                margin-bottom: 30px;
             }
         }
     }
@@ -80,6 +83,7 @@ section#partner_with_us {
         .partner_with_us {
             .talk {
                 width: 40%;
+
             }
             p {
                 font-size: 16px;

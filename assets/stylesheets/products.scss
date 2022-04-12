@@ -67,13 +67,13 @@
 }
 .right-arrow {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 89%;
 }
 
 .left-arrow {
   position: absolute;
-  top: 60%;
+  top: 50%;
 }
 
 /* 1275px breakpoint */
@@ -133,12 +133,8 @@
       margin-right: 20px;
       padding: 15px 7px;
     }
-    .left-arrow{
-      top: 55%;
-    }
     .right-arrow{
       left: 90%;
-      top: 55%;
     }
 }
 @media(max-width: 360px){
