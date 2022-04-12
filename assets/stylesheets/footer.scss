@@ -5,9 +5,12 @@ footer {
     height: inherit;
   }
   a {
-    color: white !important;
+    //color: $secondary-color !important; #uncomment when contact us form is added
+    color: white !important; //remove when contact us form is added
   }
   &.custom-site-footer {
+    // background: $tertiary-color; // swap out when contact us form is added.
+    // color: $secondary-color;
     background: $secondary-color;
     color: white;
     padding: 30px 0;
