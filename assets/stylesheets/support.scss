@@ -28,9 +28,11 @@ section#support_us {
             width: 70%;
             height: 50px;
             margin-top: 50px;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
-
+        .donate-div{
+            padding-bottom: 3rem;
+        }
         .support {
             margin: auto 40% auto auto;
             width: 50%;
@@ -73,6 +75,7 @@ section#support_us {
             }
             .donate {
                 width: 30%;
+                margin-bottom: 30px;
             }
         }
     }
