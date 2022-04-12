@@ -5,11 +5,11 @@ footer {
     height: inherit;
   }
   a {
-    color: $secondary-color !important;
+    color: white !important;
   }
   &.custom-site-footer {
-    background: $tertiary-color;
-    color: $secondary-color;
+    background: $secondary-color;
+    color: white;
     padding: 30px 0;
   }
   .footer-wrapper {
