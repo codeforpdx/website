@@ -21,7 +21,7 @@
 .products-container {
   overflow: hidden;
   margin: 0 auto;
-  width: 982px;
+  width: 1030px;
 }
 
 #products {
@@ -41,7 +41,9 @@
   width: 290px;
   height: 344px;
   float: left;
-  margin-right: 35px;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
   padding: 15px 7px;
   display: flex;
   flex-direction: column;
@@ -67,35 +69,39 @@
   position: absolute;
   top: 60%;
   left: 89%;
-  z-index: 10;
 }
 
 .left-arrow {
   position: absolute;
   top: 60%;
-  z-index: 10;
 }
 
 /* 1275px breakpoint */
 
 @media(max-width: 1275px) {
   .products-container {
-    width: 643px;
+    width: 693px;
   }
 }
 
-@media(max-width: 950px) {
+@media(max-width: 960px) {
+  .products{
+    width: 90%;
+  }
+  .right-arrow{
+    left: 93%;
+  }
   .products-container {
-    width: 304px;
+    width: 344px;
   }
 }
 
 @media(max-width: 660px) {
   .products-container {
-    width: 304px;
+    width: 340px;
   }
 .right-arrow{
-  left: 88%;
+  left: 92%;
 }
 
   .products-li {
@@ -103,17 +109,18 @@
     width: 290px;
     height: 344px;
     float: left;
-    margin-right: 35px;
+    margin-right: 20px;
     padding: 15px 7px;
   }
 }
 
 @media(max-width: 450px){
   .products-container{
-    width: 228px;
+    width: 268px;
   }
   #products p{
     font-size: 12px;
+    margin-left: 20px;
   }
   #products h3{
     font-size: 16px;
@@ -123,24 +130,25 @@
       width: 217px;
       height: 258px;
       float: left;
-      margin-right: 35px;
+      margin-right: 20px;
       padding: 15px 7px;
     }
     .left-arrow{
       top: 55%;
     }
     .right-arrow{
-      left: 84%;
+      left: 90%;
       top: 55%;
     }
 }
 @media(max-width: 360px){
     .products-container {
-      width: 209px;
+      width: 245px;
     }
     
     #products p {
       font-size: 12px;
+      margin-left: 10px;
     }
     
     #products h3 {
@@ -152,7 +160,7 @@
       width: 195px;
       height: 232px;
       float: left;
-      margin-right: 35px;
+      margin-right: 20px;
       padding: 15px 7px;
     }
     
@@ -161,7 +169,7 @@
     }
     
     .right-arrow {
-      left: 84%;
+      left: 91%;
       top: 55%;
     }
 }

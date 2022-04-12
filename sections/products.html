@@ -39,10 +39,6 @@
     var right = 0
     var left = 0
     var position = 0;
-    let isMobile = false;
-    let width = screen.width;
-    width <= 475 ? offset = 55 : offset = 35;
-
 
     function moveRight() {
       if (position <= 4) {
@@ -50,7 +46,7 @@
       } else {
         position = 0;
       }
-      moduleOffset = document.querySelector(".products-li").offsetWidth + 35;
+      moduleOffset = document.querySelector(".products-li").offsetWidth + 40;
       productsList = document.querySelector(".products-list");
       productsList.style.left = -(position * moduleOffset) + "px";
     }
@@ -61,7 +57,7 @@
       } else {
         position = 0;
       }
-      moduleOffset = document.querySelector(".products-li").offsetWidth + 35;
+      moduleOffset = document.querySelector(".products-li").offsetWidth + 40;
       productsList = document.querySelector(".products-list");
       productsList.style.left = -(position * moduleOffset) + "px";
     }
