@@ -96,16 +96,6 @@ footer {
         margin-top: 15px;
       }
     }
-  }
-  @media (max-width: 660px){
-    .hidden-mobile {
-      visibility: hidden;
-      display: none !important;
-      clear: both;
-    }
-  }
-
-  @media (max-width: 549px) {
     .hidden-mobile {
       visibility: hidden;
       display: none !important;
@@ -116,6 +106,10 @@ footer {
       display: inline-block !important;
       padding-left: 15px;
     }
+  }
+
+  @media (max-width: 549px) {
+
     ul {
       margin-left: 0;
     }
