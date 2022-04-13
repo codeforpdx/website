@@ -77,14 +77,34 @@ footer {
     .footer {
       width: 90%;
     }
+    ul{
+      margin-left: 0px;
+    }
   }
   @media (max-width: 768px) {
+    ul{
+      margin-left: 0px;
+    }
     .footer-soc-icons {
+      margin-top: 29px;
+      display: block;
+      float: none;
       li {
-        margin-left: 20px;
+        margin-left: 0px;
+        list-style: none;
+        display: block;
+        margin-top: 15px;
       }
     }
   }
+  @media (max-width: 660px){
+    .hidden-mobile {
+      visibility: hidden;
+      display: none !important;
+      clear: both;
+    }
+  }
+
   @media (max-width: 549px) {
     .hidden-mobile {
       visibility: hidden;
@@ -144,9 +164,6 @@ footer {
 
     .footer-soc-icons {
       margin-top: 18px;
-      li {
-        margin-left: 10px;
-      }
       img {
         height: 24px;
         width: 24px;
