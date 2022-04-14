@@ -26,6 +26,9 @@ footer {
     display: inline-block;
     height: inherit;
     vertical-align: middle;
+    div p {
+      font-weight: 500;
+    }
   }
 
   .footer-soc-icons {
@@ -77,12 +80,12 @@ footer {
     .footer {
       width: 90%;
     }
-    ul{
+    ul {
       margin-left: 0px;
     }
   }
   @media (max-width: 768px) {
-    ul{
+    ul {
       margin-left: 0px;
     }
     .footer-soc-icons {
@@ -109,7 +112,6 @@ footer {
   }
 
   @media (max-width: 549px) {
-
     ul {
       margin-left: 0;
     }
