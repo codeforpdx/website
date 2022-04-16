@@ -26,6 +26,9 @@ footer {
     display: inline-block;
     height: inherit;
     vertical-align: middle;
+    div p {
+      font-weight: 500;
+    }
   }
 
   .footer-soc-icons {
@@ -58,7 +61,7 @@ footer {
   }
 
   .nav-h1 {
-    font-size: 26px;
+    font-size: 25px;
     text-decoration: none;
     padding-top: 5px;
   }
@@ -77,12 +80,12 @@ footer {
     .footer {
       width: 90%;
     }
-    ul{
+    ul {
       margin-left: 0px;
     }
   }
   @media (max-width: 768px) {
-    ul{
+    ul {
       margin-left: 0px;
     }
     .footer-soc-icons {
@@ -107,16 +110,11 @@ footer {
       padding-left: 15px;
     }
   }
-
   @media (max-width: 549px) {
-
-    ul {
-      margin-left: 0;
-    }
-    .site-logo > img {
+    .site-logo>img {
       height: 58px;
     }
-
+    
     .nav-h1 {
       font-size: 23px;
     }
@@ -126,6 +124,7 @@ footer {
       padding-top: 0;
       line-height: 25px;
     }
+
     .footer-soc-icons {
       margin-top: 29px;
       display: block;

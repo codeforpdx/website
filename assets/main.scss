@@ -3,20 +3,22 @@
 ---
 
 // $content-width: 100%;
-@import "minima";
+@import 'minima';
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap');
 
 $primary-color: #1ef7e2eb;
 $secondary-color: #272932;
 $tertiary-color: #ececec;
 
-@import "header";
-@import "footer";
-@import "products";
-@import "about";
-@import "partner_with_us";
-@import "volunteer";
-@import "support";
-@import "partners_sponsors";
+@import 'header';
+@import 'footer';
+@import 'products';
+@import 'about';
+@import 'partner_with_us';
+@import 'volunteer';
+@import 'support';
+@import 'partners_sponsors';
 
 /* override minima wrapper to fill section backgrounds */
 .wrapper {
@@ -26,6 +28,7 @@ $tertiary-color: #ececec;
 
 body {
   color: #000;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .custom-page-content {
@@ -39,13 +42,6 @@ body {
   fill: #c0c0c0;
   padding-right: 5px;
   vertical-align: text-top;
-}
-
-.custom-site-title,
-.custom-site-title:visited {
-  color: $primary-color;
-  text-decoration: none;
-  font-weight: 600;
 }
 
 /* body */
@@ -116,9 +112,9 @@ a:hover {
 }
 
 .shady-box-shadow {
-  -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-  -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
-  box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.16);
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.16);
 }
 
 .role {
@@ -134,9 +130,9 @@ a:hover {
   position: sticky;
   bottom: 0;
   background-color: $secondary-color;
-      -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-      -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-      box-shadow: 3px 0 5px rgba(57, 63, 72, 0.3);
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 3px 0 5px rgba(57, 63, 72, 0.3);
 }
 
 .donate-button button:hover {
@@ -173,7 +169,7 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .donate-button{
+  .donate-button {
     display: flex;
     justify-content: center;
     align-items: center;
