@@ -1,31 +1,34 @@
 <section id="products">
   <div class="products">
-    {% include section_header.html content="Our Products" %}
+    {% include section_header.html content="Our Projects" %}
     <img src="/assets/images/products/arrow-left.png" class="left-arrow" alt="left arrow" title="left arrow"
       onClick="moveLeft()" />
     <div class="products-container">
       <ul class="post-list products-list">
         {% for product in site.products %}
-        <li class="shady-box-shadow box-padding products-li">
-          <div class="product-wrap">
-            <h3>
-              <a href="{{ product.link | absolute_url }}" target="_blank">{{ product.name }}</a>
-            </h3>
-          </div>
-          <div class="product-wrap product-img-wrapper">
-            <img src="{{ product.logo | absolute_url }}" alt="{{ product.name }}" title="{{ product.name }}" />
-          </div>
-          <div class="product-wrap">
-            <p class="product-description">{{ product.description }}</p>
-            {% if product.status == "Active" %}
-            <p class="status active">Current Status: {{ product.status }}</p>
-            {% elsif product.status == "On Hold" %}
-            <p class="status on-hold">Current Status: {{ product.status }}</p>
-            {% else %}
-            <p class="status completed">Current Status: {{ product.status }}</p>
-            {% endif %}
-          </div>
-        </li>
+        <a href="{{ product.link | absolute_url }}" target="_blank">
+          <li class="shady-box-shadow box-padding products-li">
+
+            <div class="product-wrap">
+              <h3>
+                {{ product.name }}
+              </h3>
+            </div>
+            <div class="product-wrap product-img-wrapper">
+              <img src="{{ product.logo | absolute_url }}" alt="{{ product.name }}" title="{{ product.name }}" />
+            </div>
+            <div class="product-wrap">
+              <p class="product-description">{{ product.description }}</p>
+              {% if product.status == "Active" %}
+              <p class="status active">Current Status: {{ product.status }}</p>
+              {% elsif product.status == "On Hold" %}
+              <p class="status on-hold">Current Status: {{ product.status }}</p>
+              {% else %}
+              <p class="status completed">Current Status: {{ product.status }}</p>
+              {% endif %}
+            </div>
+          </li>
+        </a>
         {% endfor %}
       </ul>
     </div>
@@ -41,7 +44,7 @@
     var position = 0;
 
     function moveRight() {
-      if (position <= 4) {
+      if (position <= 2) {
         position++;
       } else {
         position = 0;

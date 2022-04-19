@@ -2,7 +2,7 @@
 name: Open Transit
 description: Public transit optimization
 status: Building
-# link: multiple repos?
+link: https://github.com/codeforpdx/opentransit-metrics
 logo: /assets/images/products/open-transit.png
 ---
 
