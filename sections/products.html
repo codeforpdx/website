@@ -42,9 +42,25 @@
     var right = 0
     var left = 0
     var position = 0;
+    // let maxpos = 2;
+
+    function getMaxPos() {
+      let screensize = window.innerWidth;
+      if (screensize >= 960 && screensize <= 1275) {
+        maxpos = 3
+      }
+      else if (screensize < 960) {
+        maxpos = 4;
+      }
+      else {
+        maxpos = 2;
+      }
+      return maxpos;
+    }
 
     function moveRight() {
-      if (position <= 2) {
+      let maxpos = getMaxPos();
+      if (position <= maxpos) {
         position++;
       } else {
         position = 0;

@@ -75,18 +75,32 @@
   position: absolute;
   top: 50%;
   left: 89%;
+  z-index: 20;
 }
 
 .left-arrow {
   position: absolute;
   top: 50%;
+  z-index: 20;
 }
 
+@media (max-width: 1400px) {
+  .left-arrow {
+    left: 100px;
+  }
+  .right-arrow{
+    left: 91%;
+  }
+  
+}
 /* 1275px breakpoint */
 
 @media (max-width: 1275px) {
   .products-container {
     width: 693px;
+  }
+  .left-arrow{
+    left: unset;
   }
 }
 
