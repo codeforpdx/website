@@ -1,0 +1,94 @@
+section#partner_with_us {
+  .partner_with_us {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+    .content {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    h2 {
+      text-align: left !important;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 500;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .talk {
+      width: 70%;
+      height: 50px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .chat {
+      padding-bottom: 3rem;
+    }
+    .teamwork {
+      margin: auto;
+      padding: 15px 0px;
+      width: 40%;
+    }
+    .hidden-mobile {
+      display: none;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .partner_with_us {
+      margin: auto;
+      text-align: center;
+      width: 90%;
+      display: block;
+
+      .content {
+        width: 100%;
+      }
+      h1 {
+        text-align: center;
+        font-size: 24px;
+      }
+      h2 {
+        text-align: center !important;
+        margin-bottom: 0px;
+      }
+      p {
+        text-align: left;
+      }
+      .hidden-mobile {
+        margin: auto;
+        display: block;
+        padding: 20px 0px;
+        width: 50%;
+      }
+      .teamwork {
+        display: none;
+      }
+      .talk {
+        width: 30%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 549px) {
+    .partner_with_us {
+      .talk {
+        width: 40%;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
