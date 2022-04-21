@@ -1,81 +1,35 @@
 <footer class="custom-site-footer h-card">
-  <data class="u-url" href="{{ " /" | relative_url }}"></data>
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-    <div class="footer">
-      <div>
-        <div class="container">
-          <a class="site-logo" rel="author" href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/images/rose_logo.png' | absolute_url }}" alt="logo">
-          </a>
-        </div>
-        <div class="container">
-          <h1 class="nav-h1">
-            <a class="custom-site-title" rel="author" href="{{ '/' | relative_url }}">
-              Code For </br>
-              <div class="nav-bottom-h1">PDX</div>
-            </a>
-          </h1>
-        </div>
-        <div class="container footer-soc-icons">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/company/{{ site.linkedin_username }}" target="_blank">
-                <img src="{{ '/assets/images/social_icons/linkedin.png' | absolute_url }}" alt="Linkedin" />
-                <p class="hidden-desktop">Linkedin</p>
-              </a>
 
+    <h2 class="custom-footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
             </li>
-
-            <li>
-              <a href="https://www.meetup.com/{{ site.meetup_username }}" target="_blank">
-                <img src="{{ '/assets/images/social_icons/meetup.png' | absolute_url }}" alt="meetup" />
-                <p class="hidden-desktop">Meetup</p>
-              </a>
-
-            </li>
-            <li>
-              <a href="https://join.slack.com/t/{{ site.slack_username| cgi_escape | escape }}/shared_invite/zt-4msr5np3-n5qBye3GG~4hA_7XZkczgA"
-                target="_blank">
-                <img src="{{ '/assets/images/social_icons/slack.png' | absolute_url }}" alt="meetup" />
-                <p class="hidden-desktop">Slack</p>
-              </a>
-
-            </li>
-            <li>
-              <a href="https://www.github.com/{{ site.github_username }}" target="_blank">
-                <img src="{{ '/assets/images/social_icons/github.png' | absolute_url }}" alt="github" />
-                <p class="hidden-desktop">Github</p>
-              </a>
-
-            </li>
-
-            <li>
-              <a href="https://www.twitter.com/{{ site.twitter_username }}" target="_blank">
-                <img src="{{ '/assets/images/social_icons/twitter.png' | absolute_url }}" alt="twitter" />
-                <p class="hidden-desktop">Twitter</p>
-              </a>
-            </li>
-
-            <li class="hidden-mobile">
-
-              <a href="https://www.codeforamerica.org/donate-to-a-brigade?utm_campaign=Code%20for%20PDX&utm_source=CodeForPDXSite"
-                target="_blank">
-                <button>Donate</button>
-              </a>
-
-            </li>
-          </ul>
-        </div>
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+        </ul>
       </div>
-      <div class="footer-wrapper">
-        <div class="container">
-          <div>
-            <p>{{- site.description | escape -}}</p>
-          </div>
-        </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
       </div>
     </div>
+
   </div>
 
 </footer>
