@@ -28,7 +28,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.codeforpdx.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Social site usernames
-linkedin_username: code-for-pdx
 twitter_username: CodeforPDX
 github_username: codeforpdx
 slack_username: codeforpdx
@@ -46,8 +45,6 @@ collections:
   partners:
   sponsors:
   team:
-    sort_by: order
-  volunteer:
     sort_by: order
 
 defaults:

@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="home">
   {%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
+    <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {% include_relative sections/about.html %}
@@ -20,4 +20,43 @@ layout: default
 
   {% include_relative sections/sponsors.html %}
 
+  <section id="team">
+    {% include section_header.html content="Our Team" %}
+    <ol>
+      {% for team_member in site.team %}
+        <li class="shady-box-shadow">
+          <div class="profile-container">
+            <div class="profile-image-container">
+              {% if team_member.image %}
+                <img
+                  class="profile-image"
+                  src="{{ team_member.image | absolute_url }}"
+                  title="{{ team_member.name }}"
+                />
+              {% else %}
+              <div>
+                {% include smiley.html %}
+              </div>
+              {% endif %}
+            </div>
+
+            <div class="profile-info-container">
+              <h3>{{ team_member.name }}</h3>
+              <p class="role">{{ team_member.role }}</p>
+              <p class="bio">{{ team_member.bio | markdownify | remove: '<p>' | remove: '</p>'}}</p>
+              <p class="team-member-contact">Contact info:</p>
+            </div>
+            <div class="profile-info-contact">
+              <a href="mailto:{{ team_member.email }}" aria-label="Email">
+                <img src="{{ '/assets/images/mail-icon.png' | absolute_url }}" aria-hidden="true" width="22" height="22">
+              </a>
+              <a href="https://www.linkedin.com/in/{{ team_member.linkedin }}" target="_blank" aria-label="Linked In">
+                <img src="{{ '/assets/images/Linkedin-icon.png' | absolute_url }}" aria-hidden="true" width="22" height="22">
+              </a>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
 </div>

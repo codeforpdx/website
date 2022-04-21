@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-{%- include head.html -%}
+  {%- include head.html -%}
 
-<body>
-  {%- include header.html -%}
+  <body>
+    {%- include header.html -%}
 
-  <main class="custom-page-content" aria-label="Content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </main>
+    <main class="custom-page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
 
+    {%- include donate_button.html -%}
+    {%- include footer.html -%}
 
-  {%- include footer.html -%}
-  {%- include donate_button.html -%}
-</body>
+  </body>
 
 </html>
