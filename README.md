@@ -33,4 +33,5 @@ Products is a collection and each individual product can be found in its collect
 
 ## Design Files 
 
-- The website redesign: [Home Page](https://www.figma.com/file/XM1goIQJxOMTRntMTnql6r/CFPDX?node-id=1185%3A530)
+- Redesign mockup: [Home Page](https://www.figma.com/file/XM1goIQJxOMTRntMTnql6r/CFPDX?node-id=1185%3A530)
+- Redesign documentation (next project manager will need to ask Hugh for access): [Google Drive FOlder] (https://drive.google.com/drive/folders/1p4qdgwV8UnE1rGvaAQiCJrwAnNzdugsM)
