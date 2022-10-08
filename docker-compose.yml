@@ -2,8 +2,10 @@ version: '3'
 services:
   web:
     build: .
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec jekyll serve --host '0.0.0.0'"
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec jekyll serve --livereload --host '0.0.0.0'"
     volumes:
-      - .:/website-reboot
+      - .:/website_reboot
     ports:
       - "4000:4000"
+      - "35729:35729"
+
