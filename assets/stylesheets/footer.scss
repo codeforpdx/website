@@ -1,0 +1,166 @@
+footer {
+  .footer {
+    width: 80%;
+    margin: auto;
+    height: inherit;
+  }
+  a {
+    //color: $secondary-color !important; #uncomment when contact us form is added
+    color: white !important; //remove when contact us form is added
+  }
+  &.custom-site-footer {
+    // background: $tertiary-color; // swap out when contact us form is added.
+    // color: $secondary-color;
+    background: $secondary-color;
+    color: white;
+    padding: 30px 0;
+  }
+  .footer-wrapper {
+    margin-top: 10px;
+  }
+  .custom-footer-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .container {
+    display: inline-block;
+    height: inherit;
+    vertical-align: middle;
+    div p {
+      font-weight: 500;
+    }
+  }
+
+  .footer-soc-icons {
+    list-style: none;
+    margin-top: 25px;
+    float: right;
+    li {
+      display: inline-block;
+      margin-left: 25px;
+    }
+    img {
+      height: 40px;
+      width: 40px;
+    }
+    button {
+      background-color: $primary-color;
+      border-radius: 10%;
+      border: none;
+      width: 80px;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .nav-bottom-h1 {
+    font-size: 50px;
+    padding-top: 0;
+    line-height: 25px;
+    font-weight: 900;
+  }
+
+  .nav-h1 {
+    font-size: 25px;
+    text-decoration: none;
+    padding-top: 5px;
+  }
+
+  .site-logo > img {
+    height: 65px;
+  }
+
+  .hidden-desktop {
+    visibility: hidden;
+    display: none !important;
+    clear: both;
+  }
+
+  @media (max-width: 960px) {
+    .footer {
+      width: 90%;
+    }
+    ul {
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 768px) {
+    ul {
+      margin-left: 0px;
+    }
+    .footer-soc-icons {
+      margin-top: 29px;
+      display: block;
+      float: none;
+      li {
+        margin-left: 0px;
+        list-style: none;
+        display: block;
+        margin-top: 15px;
+      }
+    }
+    .hidden-mobile {
+      visibility: hidden;
+      display: none !important;
+      clear: both;
+    }
+    .hidden-desktop {
+      visibility: visible;
+      display: inline-block !important;
+      padding-left: 15px;
+    }
+  }
+  @media (max-width: 549px) {
+    .site-logo>img {
+      height: 58px;
+    }
+    
+    .nav-h1 {
+      font-size: 23px;
+    }
+
+    .nav-bottom-h1 {
+      font-size: 44px;
+      padding-top: 0;
+      line-height: 25px;
+    }
+
+    .footer-soc-icons {
+      margin-top: 29px;
+      display: block;
+      float: none;
+      li {
+        list-style: none;
+        display: block;
+        margin-top: 15px;
+      }
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .site-logo > img {
+      height: 40px;
+    }
+
+    .nav-h1 {
+      font-size: 17px;
+    }
+
+    .nav-bottom-h1 {
+      font-size: 33px;
+      line-height: 19px;
+    }
+
+    .footer-soc-icons {
+      margin-top: 18px;
+      img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}

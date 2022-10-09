@@ -1,0 +1,36 @@
+#partners h2,
+#sponsors h2 {
+  font-weight: 600;
+}
+
+.card {
+  background: #fff;
+}
+
+#sponsors,
+#partners {
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 960px) {
+  #sponsors .grid-container,
+  #partners .grid-container {
+    grid-template-columns: 75vw;
+    grid-auto-rows: 35vw;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 961px) {
+  #partners .grid-container {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  #partners a {
+    width: 310px;
+    height: 145px;
+  }
+}

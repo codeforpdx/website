@@ -1,0 +1,20 @@
+<section id="volunteer_with_us">
+    <div class="volunteer">
+        {% include section_header.html content="VOLUNTEER WITH US" %}
+        <h1>Looking to use your skills for the greater good and build your resume?</h1>
+        <ul class="grid-container post-list">
+            {% for volunteers in site.volunteer %}
+            <li>
+                <img src="{{ volunteers.logo | absolute_url }}" alt="{{ volunteers.name }}"
+                    title="{{ volunteers.name }}" />
+                <p>{{volunteers.name}}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        <img class="gather" src="/assets/images/volunteer/gathering.png" alt="people gathering"
+            title="people gathering" />
+        <div class="join">
+            <a href="https://www.meetup.com/Code-for-PDX/events/"><button>Join our next meetup</button></a>
+        </div>
+    </div>
+</section>

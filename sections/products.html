@@ -1,0 +1,84 @@
+<section id="products">
+  <div class="products">
+    {% include section_header.html content="Our Projects" %}
+    <img src="/assets/images/products/arrow-left.png" class="left-arrow" alt="left arrow" title="left arrow"
+      onClick="moveLeft()" />
+    <div class="products-container">
+      <ul class="post-list products-list">
+        {% for product in site.products %}
+        <a href="{{ product.link | absolute_url }}" target="_blank">
+          <li class="shady-box-shadow box-padding products-li">
+
+            <div class="product-wrap">
+              <h3>
+                {{ product.name }}
+              </h3>
+            </div>
+            <div class="product-wrap product-img-wrapper">
+              <img src="{{ product.logo | absolute_url }}" alt="{{ product.name }}" title="{{ product.name }}" />
+            </div>
+            <div class="product-wrap">
+              <p class="product-description">{{ product.description }}</p>
+              {% if product.status == "Active" %}
+              <p class="status active">Current Status: {{ product.status }}</p>
+              {% elsif product.status == "On Hold" %}
+              <p class="status on-hold">Current Status: {{ product.status }}</p>
+              {% else %}
+              <p class="status completed">Current Status: {{ product.status }}</p>
+              {% endif %}
+            </div>
+          </li>
+        </a>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <img src="/assets/images/products/arrow-right.png" class="right-arrow" alt="right arrow" title="right arrow"
+        onClick="moveRight()" />
+    </div>
+  </div>
+  <script>
+    var listItemLeft = 0
+    var right = 0
+    var left = 0
+    var position = 0;
+    // let maxpos = 2;
+
+    function getMaxPos() {
+      let screensize = window.innerWidth;
+      if (screensize >= 960 && screensize <= 1275) {
+        maxpos = 3
+      }
+      else if (screensize < 960) {
+        maxpos = 4;
+      }
+      else {
+        maxpos = 2;
+      }
+      return maxpos;
+    }
+
+    function moveRight() {
+      let maxpos = getMaxPos();
+      if (position <= maxpos) {
+        position++;
+      } else {
+        position = 0;
+      }
+      moduleOffset = document.querySelector(".products-li").offsetWidth + 40;
+      productsList = document.querySelector(".products-list");
+      productsList.style.left = -(position * moduleOffset) + "px";
+    }
+
+    function moveLeft() {
+      if (position <= 4 && position > 0) {
+        position--;
+      } else {
+        position = 0;
+      }
+      moduleOffset = document.querySelector(".products-li").offsetWidth + 40;
+      productsList = document.querySelector(".products-list");
+      productsList.style.left = -(position * moduleOffset) + "px";
+    }
+  </script>
+</section>

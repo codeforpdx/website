@@ -1,0 +1,40 @@
+.face-area {
+  width: 100%;
+  padding-top: 90%;
+  max-height: 200px;
+  max-width: 200px;
+  background: yellow;
+  position: relative;
+  border-radius: 150px;
+  display: inline-block;
+}
+
+.eye-area {
+  width: 17%;
+  height: 26%;
+  background: #2C2E3A;
+  border-radius: 46%;
+  position: absolute;
+  top: 15%;
+}
+
+.eye1 {
+  left: 25%;
+}
+
+.eye2 {
+  right: 25%;
+}
+
+.smile-area {
+  width: 66%;
+  height: 24%;
+  border: 1px solid #2C2E3A;
+  border-top: 0;
+  background: #2C2E3A;
+  border-radius: 0 0 80px 80px / 0 0 60px 60px;
+  position: absolute;
+  bottom: 16%;
+  left: 16%;
+}
+
